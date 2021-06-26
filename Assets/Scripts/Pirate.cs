@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Pirate : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Pirate : MonoBehaviour
     private List<Trait> traits; 
     void Start()
     {
-        
+        traits = GetComponents<Trait>().ToList();
     }
 
     // Update is called once per frame
@@ -34,5 +35,13 @@ public class Pirate : MonoBehaviour
 
     public void WalkTo(Vector2 targetPosition){
         target.position = targetPosition;
+    }
+    
+    public float WorkOnTask(string taskName){
+        float workMultiplier = 1;
+        foreach(Trait trait in traits){
+            workMultiplier*= trait.GetEffectOnTask(taskName);
+        }
+        return workMultiplier;
     }
 }

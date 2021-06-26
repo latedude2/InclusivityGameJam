@@ -22,16 +22,10 @@ public class MouseInput : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,Camera.main.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0f);
             if (hit) 
             {
-                Debug.Log("Hit " + hit.transform.gameObject.name);
                 if (hit.transform.gameObject.tag == "Pirate")
                 {
                     hit.transform.gameObject.GetComponent<Pirate>().Select();
-                    Debug.Log ("Selected Pirate!");
-                } else {
-                    Debug.Log ("Selected nothing :(");
                 }
-            } else {
-                Debug.Log("No hit");
             }
         } 
         if(Input.GetMouseButtonDown(1))
