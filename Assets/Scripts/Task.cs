@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Task : MonoBehaviour
 {
-    public string name;
-    public float timeTaken;
+    public string taskName;
+    public List<GameObject> interactingPirates;
+    public float timeLeft;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +16,30 @@ public class Task : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        foreach(GameObject pirate in interactingPirates )
+        {
+            timeLeft -= pirate.GetComponent<Pirate>().WorkOnTask(taskName) * Time.deltaTime;
+        }   
+        if(timeLeft < 0)
+        {
+            Destroy(gameObject);
+        }
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log(col.gameObject.name + " : " + gameObject.name);
+        if(col.gameObject.tag == "Pirate")
+        {
+            Debug.Log("Collided with pirate!");
+            if(!interactingPirates.Contains(col.gameObject))
+                interactingPirates.Add(col.gameObject);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Pirate")
+        {
+            interactingPirates.Remove(col.gameObject);
+        }
     }
 }
