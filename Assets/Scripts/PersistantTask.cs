@@ -2,17 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PersistantTask : MonoBehaviour
+public abstract class PersistantTask : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string taskName;
+    public List<GameObject> interactingPirates;
+
+    void OnTriggerEnter2D(Collider2D col)
     {
-        
+        if(col.gameObject.tag == "Pirate")
+        {
+            Debug.Log("Collided with pirate!");
+            if(!interactingPirates.Contains(col.gameObject))
+                interactingPirates.Add(col.gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerExit2D(Collider2D col)
     {
-        
+        if(col.gameObject.tag == "Pirate")
+        {
+            interactingPirates.Remove(col.gameObject);
+        }
     }
 }
