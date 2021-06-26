@@ -41,10 +41,16 @@ namespace SAP2D {
         private SAP2DPathfinder pathfinder;
 
         private SAP_GridSource grid;
+        private Animator animator;
+        SpriteRenderer spriteRenderer;
+
 
         private void Start()
         {
             pathfinder = SAP2DPathfinder.singleton;
+            animator = GetComponent<Animator>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
+
         }
 
         private void Update()
@@ -131,6 +137,21 @@ namespace SAP2D {
                             Vector3 dir = currentTargetVector - transform.position; //direction of turn towards the current tile
                             //Rotate(dir);
 
+                            if (dir.x > 0.1)
+                            {
+                                animator.SetBool("isWalking", true);
+                                spriteRenderer.flipX = false;
+                            }
+                            else if (dir.x < -0.1)
+                            {
+                                animator.SetBool("isWalking", true);
+                                spriteRenderer.flipX = true;
+                            }
+                            else
+                            {
+                                animator.SetBool("isWalking", false);
+                            }
+
                             //line movement to current tile
                             transform.position = Vector2.MoveTowards(transform.position, currentTargetVector, Time.deltaTime * MovementSpeed);
 
@@ -139,6 +160,7 @@ namespace SAP2D {
                                 if (pathIndex < path.Length - 1)                                                     //to move to the next tile
                                     pathIndex++;
                             }
+                            
                         }
                     }
                 }
