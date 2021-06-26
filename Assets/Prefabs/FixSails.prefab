@@ -17,11 +17,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8071370662211972320, guid: 845412742f934f74483d3080a5426995, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.1646914
+      value: -1.68
       objectReference: {fileID: 0}
     - target: {fileID: 8071370662211972320, guid: 845412742f934f74483d3080a5426995, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4366926
+      value: 2.51
       objectReference: {fileID: 0}
     - target: {fileID: 8071370662211972320, guid: 845412742f934f74483d3080a5426995, type: 3}
       propertyPath: m_LocalPosition.z
@@ -54,6 +54,14 @@ PrefabInstance:
     - target: {fileID: 8071370662211972320, guid: 845412742f934f74483d3080a5426995, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944596029213844922, guid: 845412742f934f74483d3080a5426995, type: 3}
+      propertyPath: taskName
+      value: FixSails
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944596029213844922, guid: 845412742f934f74483d3080a5426995, type: 3}
+      propertyPath: timeLeft
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 845412742f934f74483d3080a5426995, type: 3}

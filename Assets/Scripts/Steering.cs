@@ -5,7 +5,9 @@ using UnityEngine;
 public class Steering: PersistantTask
 {
     public Spawner holeSpawner;
-    private float steeringQuality = 0f;
+    public Scouting scouting;
+    public float steeringQuality = 0f;
+    public float scoutingBoost = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,7 @@ public class Steering: PersistantTask
     }
 
     void EncounterObstacle(){
+        scoutingBoost = scouting.GetScoutingBoost();
         //Pirate with best skill in range is chosen to steer
         foreach(GameObject pirate in interactingPirates )
         {
@@ -21,9 +24,10 @@ public class Steering: PersistantTask
             }
         }   
         //Roll for steering
-        if(Random.Range(0f, 100f) + 50 * steeringQuality < 50)
+        if(Random.Range(0f, 100f) + 50 * steeringQuality * scoutingBoost < 50)
         {
-            
+            Debug.Log("Spawning hole!");
+            holeSpawner.Spawn();
         }
     }
 
