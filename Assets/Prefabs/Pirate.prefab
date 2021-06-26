@@ -111,7 +111,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 146010, guid: 013079affae5ba24bad744f569696fab, type: 3}
       propertyPath: m_Name
-      value: Pirate1
+      value: Pirate
       objectReference: {fileID: 0}
     - target: {fileID: 146010, guid: 013079affae5ba24bad744f569696fab, type: 3}
       propertyPath: m_TagString
@@ -123,15 +123,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453410, guid: 013079affae5ba24bad744f569696fab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 453410, guid: 013079affae5ba24bad744f569696fab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 453410, guid: 013079affae5ba24bad744f569696fab, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 453410, guid: 013079affae5ba24bad744f569696fab, type: 3}
       propertyPath: m_LocalPosition.x
