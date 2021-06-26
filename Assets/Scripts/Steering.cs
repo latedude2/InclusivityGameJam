@@ -5,7 +5,7 @@ using UnityEngine;
 public class Steering: PersistantTask
 {
     public Spawner holeSpawner;
-    private float steeringQuality = 0f;
+    public float steeringQuality = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,8 @@ public class Steering: PersistantTask
         //Roll for steering
         if(Random.Range(0f, 100f) + 50 * steeringQuality < 50)
         {
-            
+            Debug.Log("Spawning hole!");
+            holeSpawner.Spawn();
         }
     }
 
