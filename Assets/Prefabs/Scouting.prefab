@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27923ff25039ff6479117063519051b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  taskName: 
+  interactingPirates: []
 --- !u!1001 &3908398531633231180
 PrefabInstance:
   m_ObjectHideFlags: 0
