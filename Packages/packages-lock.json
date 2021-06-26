@@ -116,12 +116,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "io.backtrace.unity": {
-      "version": "file:C:/Users/Simas/Documents/InclusivityGameJam/io.backtrace.unity",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
