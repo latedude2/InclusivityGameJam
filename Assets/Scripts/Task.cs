@@ -29,8 +29,9 @@ public class Task : MonoBehaviour
     {
         if(col.gameObject.tag == "Pirate")
         {
+            Debug.Log("Collided with pirate!");
             if(!interactingPirates.Contains(col.gameObject))
-            interactingPirates.Add(col.gameObject);
+                interactingPirates.Add(col.gameObject);
         }
     }
 
