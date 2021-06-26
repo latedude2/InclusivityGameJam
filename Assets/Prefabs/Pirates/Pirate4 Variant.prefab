@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1127685148610346608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221568418331270332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitName: Fearless
+  taskEffects:
+  - taskName: Scouting
+    modifier: 1.5
 --- !u!114 &7452601771340112252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18,22 +34,6 @@ MonoBehaviour:
     modifier: 1.5
   - taskName: Scouting
     modifier: 1.5
---- !u!114 &1127685148610346608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221568418331270332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  traitName: Fearless
-  taskEffects:
-  - taskName: Scouting
-    modifier: 1.5
 --- !u!1001 &8959663149599707631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45,6 +45,22 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 216512590, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 216512590, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 72018003160021620, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 785cc157e65c5dc4b8aead9798d6e403, type: 2}
+    - target: {fileID: 5828310213292011651, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81238109c215dc744b503232830a1c74, type: 3}
     - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: m_RootOrder
       value: 0

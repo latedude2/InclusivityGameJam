@@ -129,7 +129,7 @@ namespace SAP2D {
                             Vector3 currentTargetVector = grid.GetTileDataAtWorldPosition(path[pathIndex]).WorldPosition; //current tile position
 
                             Vector3 dir = currentTargetVector - transform.position; //direction of turn towards the current tile
-                            Rotate(dir);
+                            //Rotate(dir);
 
                             //line movement to current tile
                             transform.position = Vector2.MoveTowards(transform.position, currentTargetVector, Time.deltaTime * MovementSpeed);
@@ -147,7 +147,7 @@ namespace SAP2D {
                     if (transform.position != targetVector)
                     {
                         Vector3 dir = targetVector - transform.position; //the direction of the turn towards the target
-                        Rotate(dir);
+                        //Rotate(dir);
 
                         //line movement to target
                         transform.position = Vector2.MoveTowards(transform.position, targetVector, Time.deltaTime * MovementSpeed);
