@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &8119607535573904263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729741127404818254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitName: FearOfHeights
+  taskEffects:
+  - taskName: PoleDuty
+    modifier: 0
+  - taskName: FixingSails
+    modifier: 0
+--- !u!114 &8704063211753691766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729741127404818254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitName: Eyesight
+  taskEffects:
+  - taskName: Steering
+    modifier: 0
+  - taskName: PoleDuty
+    modifier: 0
+--- !u!114 &6464496671053960953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729741127404818254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitName: Cook
+  taskEffects:
+  - taskName: Cooking
+    modifier: 2
+--- !u!1001 &6540034739954893341
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 216512587, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 216512588, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: traitName
+      value: Cook
+      objectReference: {fileID: 0}
+    - target: {fileID: 216512588, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: taskEffects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 216512588, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: taskEffects.Array.data[0].modifier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 216512588, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: taskEffects.Array.data[0].taskName
+      value: Cooking
+      objectReference: {fileID: 0}
+    - target: {fileID: 216512588, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: taskEffects.Array.data[1].taskName
+      value: FixHole
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828310213312957779, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_Name
+      value: Pirate1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108276632403914106, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+--- !u!1 &729741127404818254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5828310213312957779, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+  m_PrefabInstance: {fileID: 6540034739954893341}
+  m_PrefabAsset: {fileID: 0}
