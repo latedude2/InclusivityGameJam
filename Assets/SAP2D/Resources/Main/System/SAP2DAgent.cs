@@ -140,16 +140,25 @@ namespace SAP2D {
                             if (dir.x > 0.1)
                             {
                                 animator.SetBool("isWalking", true);
+                                animator.SetBool("isClimbing", false);
                                 spriteRenderer.flipX = false;
                             }
                             else if (dir.x < -0.1)
                             {
                                 animator.SetBool("isWalking", true);
+                                animator.SetBool("isClimbing", false);
+                                spriteRenderer.flipX = true;
+                            }
+                            else if (dir.y < -0.1 || dir.y > 0.1)
+                            {
+                                animator.SetBool("isWalking", false);
+                                animator.SetBool("isClimbing", true);
                                 spriteRenderer.flipX = true;
                             }
                             else
                             {
                                 animator.SetBool("isWalking", false);
+                                animator.SetBool("isClimbing", false);
                             }
 
                             //line movement to current tile
