@@ -194,7 +194,7 @@
       "url": "https://packages.unity.com"
     },
     "io.backtrace.unity": {
-      "version": "file:C:/Users/Simas/Downloads/backtrace-unity-3.5.0",
+      "version": "file:C:/Users/Simas/Documents/InclusivityGameJam/Assets/Plugins/io.backtrace.unity",
       "depth": 0,
       "source": "local",
       "dependencies": {}
