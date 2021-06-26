@@ -3,24 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
-{
-    [System.Serializable]
-    public class SpawnLocation
-    {
-        public Transform location;
-        public bool used = false;
-    }
+{  
     public List<SpawnLocation> spawnLocations;
     public GameObject prefab;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+   
+    public void Spawn(){
+        List<SpawnLocation> filtered = spawnLocations.FindAll(location => !location.used);
+        if(filtered.Count > 0)
+        {
+            SpawnLocation selectedSpawn = filtered[Random.Range(0,filtered.Count)];
+            GameObject task = Instantiate(prefab, selectedSpawn.location.position, Quaternion.identity);
+            task.GetComponent<Task>().spawnLocation = selectedSpawn;
+            selectedSpawn.used = true;
+        }
+        else {
+            Debug.Log("No spawnpoints found");
+        }
     }
 }

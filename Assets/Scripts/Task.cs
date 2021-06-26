@@ -6,6 +6,8 @@ public class Task : MonoBehaviour
 {
     public string taskName;
     public List<GameObject> interactingPirates;
+
+    public SpawnLocation spawnLocation;
     public float timeLeft;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,7 @@ public class Task : MonoBehaviour
         }   
         if(timeLeft < 0)
         {
+            spawnLocation.used = false;
             Destroy(gameObject);
         }
     }

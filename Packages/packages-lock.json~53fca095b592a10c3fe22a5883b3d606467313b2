@@ -194,7 +194,11 @@
       "url": "https://packages.unity.com"
     },
     "io.backtrace.unity": {
-      "version": "file:C:/Users/Simas/Documents/InclusivityGameJam/io.backtrace.unity",
+<<<<<<< HEAD
+      "version": "file:D:/GameJam/Inclusivity/InclusivityGameJam/Assets/Plugins/io.backtrace.unity",
+=======
+      "version": "file:D:/GitHub/InclusivityGameJam/io.backtrace.unity",
+>>>>>>> 61243441a98077de0461e22e93118123d1f9f3aa
       "depth": 0,
       "source": "local",
       "dependencies": {}

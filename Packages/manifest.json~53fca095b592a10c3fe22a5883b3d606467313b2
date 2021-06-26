@@ -16,7 +16,11 @@
     "com.unity.timeline": "1.5.5",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.6.1",
-    "io.backtrace.unity": "file:C:/Users/Simas/Documents/InclusivityGameJam/io.backtrace.unity",
+<<<<<<< HEAD
+    "io.backtrace.unity": "file:D:/GameJam/Inclusivity/InclusivityGameJam/Assets/Plugins/io.backtrace.unity",
+=======
+    "io.backtrace.unity": "file:D:/GitHub/InclusivityGameJam/io.backtrace.unity",
+>>>>>>> 61243441a98077de0461e22e93118123d1f9f3aa
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
