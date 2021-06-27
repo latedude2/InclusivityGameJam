@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3266214004974822689, guid: 845412742f934f74483d3080a5426995, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3948826628860340884, guid: 845412742f934f74483d3080a5426995, type: 3}
       propertyPath: m_Name
       value: FixSails
