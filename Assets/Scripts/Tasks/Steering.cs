@@ -31,4 +31,15 @@ public class Steering: PersistantTask
         }
     }
 
+    public float GetSteeringBoost(){
+        //Pirate with best skill in range is chosen to steer
+        foreach(GameObject pirate in interactingPirates )
+        {
+            if(steeringQuality < pirate.GetComponent<Pirate>().WorkOnTask("Steering")){
+                steeringQuality = pirate.GetComponent<Pirate>().WorkOnTask("Steering");
+            }
+        }   
+        return steeringQuality;
+    }
+
 }

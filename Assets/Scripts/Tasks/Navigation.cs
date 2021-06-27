@@ -5,7 +5,7 @@ using UnityEngine;
 public class Navigation : PersistantTask
 {
     public float GetNavigationBoost(){
-        float navigationBoost = 1;
+        float navigationBoost = 1f;
         foreach(GameObject pirate in interactingPirates)
         {
             navigationBoost *= pirate.GetComponent<Pirate>().WorkOnTask("Navigation");
