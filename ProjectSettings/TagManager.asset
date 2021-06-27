@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pirate
+  - Miner
+  - Zombie
   layers:
   - Default
   - TransparentFX

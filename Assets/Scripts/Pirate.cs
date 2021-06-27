@@ -6,6 +6,8 @@ using System.Linq;
 public class Pirate : MonoBehaviour
 {
     private bool isSelected = false;
+
+    private DisplayTraits displayTraits = new DisplayTraits();
     [SerializeField] private Transform target;
     // Start is called before the first frame update
 
@@ -20,9 +22,11 @@ public class Pirate : MonoBehaviour
     {
         if(isSelected){
             GetComponentInChildren<SpriteRenderer>().color = Color.yellow;
+            displayTraits.showTraits();
         }
         else {
             GetComponentInChildren<SpriteRenderer>().color = Color.white;
+            displayTraits.hideTraits();
         }
     }
 

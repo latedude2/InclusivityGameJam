@@ -7,10 +7,12 @@ using System.Linq;
 public class DisplayTraits : MonoBehaviour
 {
 
+    Pirate pirate = new Pirate();
     public GameObject PirateTaskNames;
     public GameObject PirateModefiers;
     private List<Text> pirateTaskNames;
     private List<Text> pirateModefiers;
+    private Image pirateImage;
     public GameObject Pirate;
     private List<Trait> traits;
     private string[] taskNames = new string[3];
@@ -18,18 +20,44 @@ public class DisplayTraits : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() 
-    {   
+    {  
         traits = Pirate.GetComponents<Trait>().ToList();
         pirateTaskNames = PirateTaskNames.GetComponentsInChildren<Text>().ToList();
         pirateModefiers = PirateModefiers.GetComponentsInChildren<Text>().ToList();
+
+        hideTraits();
+
     }
 
     // Update is called once per frame
     void Update()
     {   
+
+    }
+
+    public void showTraits(){
+        foreach (Text pirateTaskName in pirateTaskNames)
+        {
+            pirateTaskName.enabled = true;
+        }
+        foreach (Text pirateModefier in pirateModefiers)
+        {
+            pirateModefier.enabled = true;
+        }
         getPirateTraits();
         showPirateTaskNames();
         showPirateModefiers();
+    }
+
+    public void hideTraits(){
+        foreach (Text pirateTaskName in pirateTaskNames)
+        {
+            pirateTaskName.enabled = false;
+        }
+        foreach (Text pirateModefier in pirateModefiers)
+        {
+            pirateModefier.enabled = false;
+        }
     }
 
     void getPirateTraits(){
@@ -58,6 +86,13 @@ public class DisplayTraits : MonoBehaviour
             index ++;
         }
     }
-
     
+    void showImage(Image image){
+
+    }
+
+    //Image getPirateImage(){
+        //Image image;
+        //return image;
+    //}
 }
