@@ -2234,6 +2234,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2436594314663179658, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436594315675660690, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436594316177929218, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2436594316272186810, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2242,9 +2254,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4523760322336785922, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4523760322336785922, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4523760322582675384, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835302191881416544, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835302191881416544, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -90.899994
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 479537983406848985, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
@@ -2309,7 +2337,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 953918692}
     - target: {fileID: 5688709687333778972, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
-      propertyPath: PirateModefiers
+      propertyPath: PirateModifiers
       value: 
       objectReference: {fileID: 1786810965}
     - target: {fileID: 5688709687333778972, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
@@ -2324,6 +2352,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 953918692}
+    - target: {fileID: 8119607535573904263, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: traitName
+      value: Fear of heights
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
 --- !u!1001 &1375585740800897500
@@ -3025,6 +3057,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1488359350}
     m_Modifications:
+    - target: {fileID: 891008288014351031, guid: 0e508e35bd08d4a4fa85d5bd4e1b4051, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3984819030192609505, guid: 0e508e35bd08d4a4fa85d5bd4e1b4051, type: 3}
       propertyPath: m_Name
       value: Ship Background
@@ -3367,7 +3403,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 167279985570830547, guid: 3d2f091ba0246f348a0d8eaa4940dd6e, type: 3}
-      propertyPath: PirateModefiers
+      propertyPath: PirateModifiers
       value: 
       objectReference: {fileID: 1786810965}
     - target: {fileID: 167279985570830547, guid: 3d2f091ba0246f348a0d8eaa4940dd6e, type: 3}
@@ -3491,12 +3527,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pirate2
       objectReference: {fileID: 0}
+    - target: {fileID: 2706183948641732082, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: traitName
+      value: Fear of heights
+      objectReference: {fileID: 0}
     - target: {fileID: 2806720133857865842, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
       propertyPath: Target
       value: 
       objectReference: {fileID: 324842256}
     - target: {fileID: 7351855416435435785, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
-      propertyPath: PirateModefiers
+      propertyPath: PirateModifiers
       value: 
       objectReference: {fileID: 1786810965}
     - target: {fileID: 7351855416435435785, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
@@ -3573,7 +3613,7 @@ PrefabInstance:
       value: Pirate3
       objectReference: {fileID: 0}
     - target: {fileID: 7099187793959685345, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
-      propertyPath: PirateModefiers
+      propertyPath: PirateModifiers
       value: 
       objectReference: {fileID: 1786810965}
     - target: {fileID: 7099187793959685345, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
@@ -3736,6 +3776,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1786810965}
     - target: {fileID: 4690011774785971372, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
+      propertyPath: PirateModifiers
+      value: 
+      objectReference: {fileID: 1786810965}
+    - target: {fileID: 4690011774785971372, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
       propertyPath: PirateTaskNames
       value: 
       objectReference: {fileID: 1722977560}
@@ -3747,6 +3791,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1963725555}
+    - target: {fileID: 7042421093378255432, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
+      propertyPath: traitName
+      value: Fear of heights
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
 --- !u!1001 &8959663150852175943
@@ -3809,7 +3857,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7523152719577605614, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
-      propertyPath: PirateModefiers
+      propertyPath: PirateModifiers
       value: 
       objectReference: {fileID: 1786810965}
     - target: {fileID: 7523152719577605614, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
