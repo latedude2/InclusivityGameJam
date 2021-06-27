@@ -37,7 +37,9 @@ public class Task : MonoBehaviour
 
     private void ShowWarning(){
         GameObject warning = gameObject.transform.Find("Warning").gameObject;
+        GameObject hammer = gameObject.transform.Find("Hammer").gameObject;
         warning.SetActive(interactingPirates.Count == 0);
+        hammer.SetActive(interactingPirates.Count != 0);
     }
 
     void OnTriggerEnter2D(Collider2D col)
