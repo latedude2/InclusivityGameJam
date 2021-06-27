@@ -7,43 +7,40 @@ using System.Linq;
 public class DisplayTraits : MonoBehaviour
 {
     public GameObject PirateTaskNames;
-    public GameObject PirateModefiers;
+    public GameObject PirateModifiers;
     public GameObject StatsDisplayBackground;
     private List<Text> pirateTaskNames;
-    private List<Text> pirateModefiers;
+    private List<Text> pirateModifiers;
     private Image pirateImage;
-    public GameObject Pirate;
     private List<Trait> traits;
-    private string[] taskNames = new string[3];
-    private float[] modifiers = new float[3];
+    private List<string> traitStrings = new List<string>();
+    private List<float> modifiers;
 
     // Start is called before the first frame update
     void Start() 
     {  
-        traits = Pirate.GetComponents<Trait>().ToList();
+        traits = GetComponents<Trait>().ToList();
         pirateTaskNames = PirateTaskNames.GetComponentsInChildren<Text>().ToList();
-        pirateModefiers = PirateModefiers.GetComponentsInChildren<Text>().ToList();
+        pirateModifiers = PirateModifiers.GetComponentsInChildren<Text>().ToList();
         hideTraits();
+        foreach(Trait trait in traits){
+            traitStrings.Add(trait.traitName);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {   
-        getPirateTraits();
-    }
 
     public void showTraits(){
         foreach (Text pirateTaskName in pirateTaskNames)
         {
             pirateTaskName.enabled = true;
         }
-        foreach (Text pirateModefier in pirateModefiers)
+        foreach (Text pirateModifier in pirateModifiers)
         {
-            pirateModefier.enabled = true;
+            pirateModifier.enabled = true;
         }
         StatsDisplayBackground.SetActive(true);
-        showPirateTaskNames();
-        showPirateModefiers();
+        showPirateTraits();
+        //showPirateModefiers();
     }
 
     public void hideTraits(){
@@ -51,46 +48,20 @@ public class DisplayTraits : MonoBehaviour
         {
             pirateTaskName.enabled = false;
         }
-        foreach (Text pirateModefier in pirateModefiers)
-        {
-            pirateModefier.enabled = false;
-        }
         StatsDisplayBackground.SetActive(false);
     }
 
-    void getPirateTraits(){
-        int index = 0;
-        foreach(Trait trait in traits){
-            taskNames[index] = trait.taskEffects[0].taskName;
-            modifiers[index] = trait.taskEffects[0].modifier;
-            index ++;
-        }
-    }
-
-    void showPirateTaskNames(){
+    void showPirateTraits(){
         int index = 0;
         foreach (Text pirateTaskName in pirateTaskNames)
         {
-            pirateTaskName.text = taskNames[index];
-            index ++;
+            if(traitStrings.Count > index)
+                pirateTaskName.text = traitStrings[index];
+            else{
+                pirateTaskName.text = "";
+            }
+            index++;
         }
     }
 
-    void showPirateModefiers(){
-        int index = 0;
-        foreach (Text pirateModefier in pirateModefiers)
-        {
-            pirateModefier.text = string.Format("{0:N0}", modifiers[index]);
-            index ++;
-        }
-    }
-    
-    void showImage(Image image){
-
-    }
-
-    //Image getPirateImage(){
-        //Image image;
-        //return image;
-    //}
 }

@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitName: FearOfHeights
+  traitName: Afraid of heights
   taskEffects:
   - taskName: Scouting
     modifier: 1.2
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitName: Eyesight
+  traitName: Eagle eye
   taskEffects:
   - taskName: Steering
     modifier: 1.5
