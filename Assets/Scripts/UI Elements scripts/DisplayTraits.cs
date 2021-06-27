@@ -9,9 +9,11 @@ public class DisplayTraits : MonoBehaviour
     public GameObject PirateTaskNames;
     public GameObject PirateModifiers;
     public GameObject StatsDisplayBackground;
+    public GameObject Pirate;
+    public GameObject pirateImageToShow;
+    public Sprite pirateImage;
     private List<Text> pirateTaskNames;
     private List<Text> pirateModifiers;
-    private Image pirateImage;
     private List<Trait> traits;
     private List<string> traitStrings = new List<string>();
     private List<float> modifiers;
@@ -22,19 +24,11 @@ public class DisplayTraits : MonoBehaviour
         traits = GetComponents<Trait>().ToList();
         pirateTaskNames = PirateTaskNames.GetComponentsInChildren<Text>().ToList();
         pirateModifiers = PirateModifiers.GetComponentsInChildren<Text>().ToList();
+
         //hideTraits();
         foreach(Trait trait in traits){
             traitStrings.Add(trait.traitName);
         }
-    }
-
-
-    public void showUIElements(){
-        StatsDisplayBackground.SetActive(true);
-    }
-
-    public void hideUIElements(){
-        StatsDisplayBackground.SetActive(false);
     }
 
     void showPirateTraits(){
@@ -52,10 +46,10 @@ public class DisplayTraits : MonoBehaviour
 
     public void updateTraits(){
         showPirateTraits();
-    }
-    
-    void showImage(Image image){
-
+        showImage(pirateImage);
+    } 
+    void showImage(Sprite image){
+        pirateImageToShow.GetComponent<Image>().sprite = image;
     }
 
 }

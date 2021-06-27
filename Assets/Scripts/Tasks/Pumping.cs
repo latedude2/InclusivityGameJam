@@ -24,6 +24,9 @@ public class Pumping : PersistantTask
         waterLevel += GetFlooding() * Time.deltaTime;
         waterLevel = Mathf.Clamp(waterLevel, 0, 1);
         waterShader._baseHeight = waterLevel;
+        if(waterLevel == 1f){
+            UnityEngine.SceneManagement.SceneManager.LoadScene("LoseGame");
+        }
     }
 
     private float GetFlooding()
