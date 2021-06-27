@@ -19,10 +19,10 @@ public class Pirate : MonoBehaviour
     void Update()
     {
         if(isSelected){
-            GetComponent<SpriteRenderer>().color = Color.yellow;
+            GetComponentInChildren<SpriteRenderer>().color = Color.yellow;
         }
         else {
-            GetComponent<SpriteRenderer>().color = Color.white;
+            GetComponentInChildren<SpriteRenderer>().color = Color.white;
         }
     }
 

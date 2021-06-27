@@ -41,6 +41,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 8c889e63f248df64db5658459ec18d4e, type: 2}
+    - target: {fileID: 2576009101957964914, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8c889e63f248df64db5658459ec18d4e, type: 2}
     - target: {fileID: 5828310213292011651, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -91,7 +95,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5828310213312957779, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: m_Name
-      value: Pirate3 Variant
+      value: Pirate3
       objectReference: {fileID: 0}
     - target: {fileID: 6108276632403914106, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: Target
