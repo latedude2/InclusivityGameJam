@@ -231,11 +231,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8100381370200713138, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.49
+      value: 2.55
       objectReference: {fileID: 0}
     - target: {fileID: 8100381370200713138, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.54
+      value: 6.49
       objectReference: {fileID: 0}
     - target: {fileID: 8100381370200713138, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -272,6 +272,38 @@ PrefabInstance:
     - target: {fileID: 8282467258143309475, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
       propertyPath: m_Name
       value: Scouting
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347832809286551285, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0.049999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347832809286551285, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0.049999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347832809286551285, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0.049999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347832809286551285, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0.049999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347832809286551285, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347832809286551285, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347832809286551285, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347832809286551285, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f49fecbdfee6be14aa7e0f4d0884bcea, type: 3}
@@ -355,8 +387,8 @@ Canvas:
   m_GameObject: {fileID: 302900206}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -365,7 +397,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!224 &302900210
 RectTransform:
@@ -1027,7 +1059,7 @@ MonoBehaviour:
   - ShowGrid: 1
     ShowGridInfo: 1
     ShowGridParameters: 1
-    ShowPathfindingSettings: 0
+    ShowPathfindingSettings: 1
     ShowGridGraphSettigs: 0
     ScaleLvl: 1
   EditorSettings: {fileID: 11400000, guid: f54fe2e0866d59148bb49fcb7b6fd41b, type: 2}
@@ -1294,6 +1326,10 @@ PrefabInstance:
     - target: {fileID: 729741127404818254, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
       propertyPath: m_Name
       value: Pirate1
+      objectReference: {fileID: 0}
+    - target: {fileID: 729741127417393822, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: m_FlipY
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1010543312806408039, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
       propertyPath: Target
@@ -2075,6 +2111,10 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 324842256}
+    - target: {fileID: 5875049677458078074, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 39d04fe9fb8c4514cb75d0c3efc725b7, type: 2}
     - target: {fileID: 8230200967571596611, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
       propertyPath: target
       value: 
@@ -2140,6 +2180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pirate3
       objectReference: {fileID: 0}
+    - target: {fileID: 6127770364794805394, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8c889e63f248df64db5658459ec18d4e, type: 2}
     - target: {fileID: 8553993822387142827, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
       propertyPath: target
       value: 
@@ -2205,6 +2249,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6910998526905087389, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 785cc157e65c5dc4b8aead9798d6e403, type: 2}
     - target: {fileID: 8959663149547252132, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
       propertyPath: target
       value: 
