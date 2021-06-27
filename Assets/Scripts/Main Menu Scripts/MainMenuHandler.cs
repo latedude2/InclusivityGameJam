@@ -24,6 +24,7 @@ public class MainMenuHandler : MonoBehaviour
     }
 
     public void backButtonTapped(){
+        Debug.Log("BackButtonTapped");
         MainMenu.SetActive(true);
         CreditsMenu.SetActive(false);
     }
