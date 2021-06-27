@@ -22,32 +22,18 @@ public class DisplayTraits : MonoBehaviour
         traits = GetComponents<Trait>().ToList();
         pirateTaskNames = PirateTaskNames.GetComponentsInChildren<Text>().ToList();
         pirateModifiers = PirateModifiers.GetComponentsInChildren<Text>().ToList();
-        hideTraits();
+        //hideTraits();
         foreach(Trait trait in traits){
             traitStrings.Add(trait.traitName);
         }
     }
 
 
-    public void showTraits(){
-        foreach (Text pirateTaskName in pirateTaskNames)
-        {
-            pirateTaskName.enabled = true;
-        }
-        foreach (Text pirateModifier in pirateModifiers)
-        {
-            pirateModifier.enabled = true;
-        }
+    public void showUIElements(){
         StatsDisplayBackground.SetActive(true);
-        showPirateTraits();
-        //showPirateModefiers();
     }
 
-    public void hideTraits(){
-        foreach (Text pirateTaskName in pirateTaskNames)
-        {
-            pirateTaskName.enabled = false;
-        }
+    public void hideUIElements(){
         StatsDisplayBackground.SetActive(false);
     }
 
@@ -62,6 +48,14 @@ public class DisplayTraits : MonoBehaviour
             }
             index++;
         }
+    }
+
+    public void updateTraits(){
+        showPirateTraits();
+    }
+    
+    void showImage(Image image){
+
     }
 
 }
