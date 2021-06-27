@@ -58,7 +58,7 @@ MonoBehaviour:
   traitName: FearOfHeights
   taskEffects:
   - taskName: Scouting
-    modifier: 1.5
+    modifier: 1.2
   - taskName: FixSails
     modifier: 1.5
 --- !u!114 &8704063211753691766
@@ -78,7 +78,7 @@ MonoBehaviour:
   - taskName: Steering
     modifier: 1.5
   - taskName: Scouting
-    modifier: 1.5
+    modifier: 1.2
 --- !u!1001 &6540034739954893341
 PrefabInstance:
   m_ObjectHideFlags: 0

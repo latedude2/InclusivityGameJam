@@ -101,6 +101,22 @@ PrefabInstance:
       value: Task
       objectReference: {fileID: 0}
     - target: {fileID: 4829940500042921338, guid: 845412742f934f74483d3080a5426995, type: 3}
+      propertyPath: m_Size.x
+      value: 1.99083
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829940500042921338, guid: 845412742f934f74483d3080a5426995, type: 3}
+      propertyPath: m_Size.y
+      value: 1.7309399
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829940500042921338, guid: 845412742f934f74483d3080a5426995, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06767964
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829940500042921338, guid: 845412742f934f74483d3080a5426995, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.36546993
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829940500042921338, guid: 845412742f934f74483d3080a5426995, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 0.16
       objectReference: {fileID: 0}
