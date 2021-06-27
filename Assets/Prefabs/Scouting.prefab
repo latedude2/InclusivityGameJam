@@ -21,6 +21,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2629503580341039296, guid: 7ff72dae51f1e9f4cb6df7eea72f81c3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4957433870888160239, guid: 7ff72dae51f1e9f4cb6df7eea72f81c3, type: 3}
       propertyPath: m_Name
       value: Scouting
