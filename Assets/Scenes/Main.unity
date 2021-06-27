@@ -2605,6 +2605,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5530452915372947354, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5835302191881416544, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -100.5
@@ -2675,6 +2679,30 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 953918692}
+    - target: {fileID: 1010543312806408039, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010543312806408039, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: ladderstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010543312806408039, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26e7df5103466cc4db429b658b9c25f4, type: 3}
+    - target: {fileID: 1010543312806408039, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 78d9773ad18885d4fbcaf81611376e0a, type: 3}
+    - target: {fileID: 1010543312806408039, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: ladderstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03ee8c3f640fc3241918d51013e71163, type: 3}
+    - target: {fileID: 1010543312806408039, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: ladderstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ee7dbf6a423f07b4c8bc59228e326735, type: 3}
     - target: {fileID: 5688709687333778972, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
       propertyPath: PirateModifiers
       value: 
@@ -3761,6 +3789,30 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 1977430515}
+    - target: {fileID: 4802592956682453416, guid: 3d2f091ba0246f348a0d8eaa4940dd6e, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802592956682453416, guid: 3d2f091ba0246f348a0d8eaa4940dd6e, type: 3}
+      propertyPath: ladderstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802592956682453416, guid: 3d2f091ba0246f348a0d8eaa4940dd6e, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26e7df5103466cc4db429b658b9c25f4, type: 3}
+    - target: {fileID: 4802592956682453416, guid: 3d2f091ba0246f348a0d8eaa4940dd6e, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 78d9773ad18885d4fbcaf81611376e0a, type: 3}
+    - target: {fileID: 4802592956682453416, guid: 3d2f091ba0246f348a0d8eaa4940dd6e, type: 3}
+      propertyPath: ladderstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03ee8c3f640fc3241918d51013e71163, type: 3}
+    - target: {fileID: 4802592956682453416, guid: 3d2f091ba0246f348a0d8eaa4940dd6e, type: 3}
+      propertyPath: ladderstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ee7dbf6a423f07b4c8bc59228e326735, type: 3}
     - target: {fileID: 5080228196374343929, guid: 3d2f091ba0246f348a0d8eaa4940dd6e, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -3874,6 +3926,30 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 324842256}
+    - target: {fileID: 2806720133857865842, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806720133857865842, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: ladderstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806720133857865842, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26e7df5103466cc4db429b658b9c25f4, type: 3}
+    - target: {fileID: 2806720133857865842, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 78d9773ad18885d4fbcaf81611376e0a, type: 3}
+    - target: {fileID: 2806720133857865842, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: ladderstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03ee8c3f640fc3241918d51013e71163, type: 3}
+    - target: {fileID: 2806720133857865842, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: ladderstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ee7dbf6a423f07b4c8bc59228e326735, type: 3}
     - target: {fileID: 7351855416435435785, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
       propertyPath: PirateModifiers
       value: 
@@ -3903,6 +3979,30 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 2022928148}
+    - target: {fileID: 2481783786956854682, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481783786956854682, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: ladderstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481783786956854682, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26e7df5103466cc4db429b658b9c25f4, type: 3}
+    - target: {fileID: 2481783786956854682, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 78d9773ad18885d4fbcaf81611376e0a, type: 3}
+    - target: {fileID: 2481783786956854682, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: ladderstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03ee8c3f640fc3241918d51013e71163, type: 3}
+    - target: {fileID: 2481783786956854682, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: ladderstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ee7dbf6a423f07b4c8bc59228e326735, type: 3}
     - target: {fileID: 2762876239133418699, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -4062,6 +4162,30 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 1963725555}
+    - target: {fileID: 135728421520473559, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 135728421520473559, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
+      propertyPath: ladderstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 135728421520473559, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26e7df5103466cc4db429b658b9c25f4, type: 3}
+    - target: {fileID: 135728421520473559, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 78d9773ad18885d4fbcaf81611376e0a, type: 3}
+    - target: {fileID: 135728421520473559, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
+      propertyPath: ladderstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03ee8c3f640fc3241918d51013e71163, type: 3}
+    - target: {fileID: 135728421520473559, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
+      propertyPath: ladderstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ee7dbf6a423f07b4c8bc59228e326735, type: 3}
     - target: {fileID: 415615662387043838, guid: c5ff1337f6ee71b46ab716b4421594dc, type: 3}
       propertyPath: m_Name
       value: Pirate6
@@ -4147,6 +4271,30 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 1931205334}
+    - target: {fileID: 2923939045556714645, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923939045556714645, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: ladderstepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923939045556714645, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26e7df5103466cc4db429b658b9c25f4, type: 3}
+    - target: {fileID: 2923939045556714645, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 78d9773ad18885d4fbcaf81611376e0a, type: 3}
+    - target: {fileID: 2923939045556714645, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: ladderstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03ee8c3f640fc3241918d51013e71163, type: 3}
+    - target: {fileID: 2923939045556714645, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: ladderstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ee7dbf6a423f07b4c8bc59228e326735, type: 3}
     - target: {fileID: 3221568418331270332, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
       propertyPath: m_Name
       value: Pirate4
