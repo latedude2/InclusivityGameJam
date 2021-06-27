@@ -41,7 +41,7 @@ public class Pumping : PersistantTask
         float pumping = 0f;
         foreach(GameObject pirate in interactingPirates )
         {
-            pumping = basePumpingSpeed * pirate.GetComponent<Pirate>().WorkOnTask("Pumping");
+            pumping += basePumpingSpeed * pirate.GetComponent<Pirate>().WorkOnTask("Pumping");
         }   
         return pumping;
     }

@@ -71,6 +71,11 @@ public class MouseInput : MonoBehaviour
                 if(hit.transform.gameObject.GetComponent<Navigation>() != null)
                     hit.transform.gameObject.GetComponent<Navigation>().Select();
             }
+            if (hit.transform.gameObject.tag == "Cooking")
+            {
+                if(hit.transform.gameObject.GetComponent<Cooking>() != null)
+                    hit.transform.gameObject.GetComponent<Cooking>().Select();
+            }
         }  
     }
 

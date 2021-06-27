@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pirates: []
+  taskPopup: {fileID: 0}
 --- !u!1 &1484429557385322820
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +298,12 @@ MonoBehaviour:
   - location: {fileID: 1484429556702906665}
     used: 0
   - location: {fileID: 1484429557845149240}
+    used: 0
+  - location: {fileID: 1397364753}
+    used: 0
+  - location: {fileID: 1677334354}
+    used: 0
+  - location: {fileID: 389269709}
     used: 0
   prefab: {fileID: 2147527146218524727, guid: 11fdb135064ac214a81d3dac202d3b10, type: 3}
 --- !u!1 &1484429557845149239

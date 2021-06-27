@@ -28,7 +28,7 @@ public class Steering: PersistantTask
             }
         }   
         //Roll for steering
-        if(Random.Range(0f, 100f) + 50 * steeringQuality * scoutingBoost < 50)
+        if(Random.Range(0f, 100f) + 50 * steeringQuality * scoutingBoost < 70)
         {
             Debug.Log("Spawning hole!");
             holeSpawner.Spawn();
