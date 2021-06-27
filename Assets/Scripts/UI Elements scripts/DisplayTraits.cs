@@ -20,8 +20,8 @@ public class DisplayTraits : MonoBehaviour
     void Start() 
     {   
         traits = Pirate.GetComponents<Trait>().ToList();
-        pirateTaskNames = PirateTaskNames.GetComponents<Text>().ToList();
-        pirateModefiers = PirateModefiers.GetComponents<Text>().ToList();
+        pirateTaskNames = PirateTaskNames.GetComponentsInChildren<Text>().ToList();
+        pirateModefiers = PirateModefiers.GetComponentsInChildren<Text>().ToList();
     }
 
     // Update is called once per frame

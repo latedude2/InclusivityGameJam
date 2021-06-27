@@ -131,10 +131,6 @@ MonoBehaviour:
     gridY: 6
   - isWalkable: 0
     walkableLock: 1
-    gridX: 17
-    gridY: 6
-  - isWalkable: 0
-    walkableLock: 1
     gridX: 18
     gridY: 6
   - isWalkable: 0
@@ -771,10 +767,6 @@ MonoBehaviour:
     gridY: 11
   - isWalkable: 0
     walkableLock: 1
-    gridX: 16
-    gridY: 11
-  - isWalkable: 0
-    walkableLock: 1
     gridX: 14
     gridY: 11
   - isWalkable: 0
@@ -837,14 +829,6 @@ MonoBehaviour:
     walkableLock: 1
     gridX: 19
     gridY: 11
-  - isWalkable: 0
-    walkableLock: 1
-    gridX: 18
-    gridY: 11
-  - isWalkable: 0
-    walkableLock: 1
-    gridX: 17
-    gridY: 10
   - isWalkable: 0
     walkableLock: 1
     gridX: 23
@@ -1863,24 +1847,12 @@ MonoBehaviour:
     gridY: 18
   - isWalkable: 0
     walkableLock: 1
-    gridX: 17
-    gridY: 11
-  - isWalkable: 0
-    walkableLock: 1
     gridX: 15
     gridY: 8
   - isWalkable: 0
     walkableLock: 1
     gridX: 16
     gridY: 8
-  - isWalkable: 0
-    walkableLock: 1
-    gridX: 17
-    gridY: 8
-  - isWalkable: 0
-    walkableLock: 1
-    gridX: 17
-    gridY: 9
   - isWalkable: 0
     walkableLock: 1
     gridX: 15
@@ -1933,3 +1905,15 @@ MonoBehaviour:
     walkableLock: 1
     gridX: 26
     gridY: 8
+  - isWalkable: 0
+    walkableLock: 1
+    gridX: 17
+    gridY: 6
+  - isWalkable: 0
+    walkableLock: 1
+    gridX: 18
+    gridY: 11
+  - isWalkable: 0
+    walkableLock: 1
+    gridX: 16
+    gridY: 11
