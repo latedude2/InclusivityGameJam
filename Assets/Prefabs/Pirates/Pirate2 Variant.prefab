@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitName: MissingArm
+  traitName: Missing Arm
   taskEffects:
   - taskName: Steering
     modifier: 0.5
@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5828310213312957779, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: m_Name
-      value: Pirate2
+      value: Pirate2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6108276632403914106, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: Target
