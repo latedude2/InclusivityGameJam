@@ -613,6 +613,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1363577923}
     m_Modifications:
+    - target: {fileID: 1305522004053315551, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305522006076569228, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305522006076569229, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305522006076569229, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 322
+      objectReference: {fileID: 0}
     - target: {fileID: 1305522006154867746, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
       propertyPath: m_RootOrder
       value: 1
