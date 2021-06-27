@@ -151,6 +151,7 @@ namespace SAP2D {
                 ladderstepSounds[0] = audioSource.clip;
             }
             audioSource.pitch = 2;
+            audioSource.volume = 0.7F;
 
         }
         private void Move()
