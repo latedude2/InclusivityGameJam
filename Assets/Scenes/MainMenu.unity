@@ -489,8 +489,8 @@ GameObject:
   m_Component:
   - component: {fileID: 209654433}
   - component: {fileID: 209654436}
-  - component: {fileID: 209654435}
   - component: {fileID: 209654434}
+  - component: {fileID: 209654435}
   m_Layer: 0
   m_Name: backButton
   m_TagString: Untagged
@@ -515,7 +515,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -170}
+  m_AnchoredPosition: {x: -2.1, y: -193.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &209654434
@@ -779,8 +779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 170}
-  m_SizeDelta: {x: 320, y: 60}
+  m_AnchoredPosition: {x: -0.5855, y: 170}
+  m_SizeDelta: {x: 834.0571, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526183572
 MonoBehaviour:
@@ -804,7 +804,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: dc90387b2201c854ca7a77638625ad3d, type: 3}
-    m_FontSize: 24
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -815,7 +815,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Friend Ship
+  m_Text: SAIL!
 --- !u!222 &526183573
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1263,6 +1263,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1436559558}
     m_Modifications:
+    - target: {fileID: 1305522004053315551, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1305522006076569218, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1314,6 +1318,14 @@ PrefabInstance:
     - target: {fileID: 1305522006154867747, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
       propertyPath: m_Name
       value: CreditMenuWin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7088925399480920281, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 142.8545
+      objectReference: {fileID: 0}
+    - target: {fileID: 7088925399480920281, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -84.26619
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d90517aea0c0ef4e8489d8e54b2a26e, type: 3}
