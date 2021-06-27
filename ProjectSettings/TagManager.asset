@@ -63,3 +63,6 @@ TagManager:
   - name: Pump
     uniqueID: 2570018915
     locked: 0
+  - name: Hammer
+    uniqueID: 389532129
+    locked: 0
