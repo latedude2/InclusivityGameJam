@@ -238,6 +238,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2246878492283719305, guid: 4bfbc3afbc267ee40923698908e46307, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6987321287218996106, guid: 4bfbc3afbc267ee40923698908e46307, type: 3}
       propertyPath: m_Name
       value: Pump
