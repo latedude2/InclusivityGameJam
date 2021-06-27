@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitName: Afraid of heights
+  traitName: Fear of heights
   taskEffects:
   - taskName: Scouting
     modifier: 1.2
@@ -95,6 +95,10 @@ PrefabInstance:
       propertyPath: taskEffects.Array.data[1].taskName
       value: FixHole
       objectReference: {fileID: 0}
+    - target: {fileID: 1454809602056238081, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: pirateImage
+      value: 
+      objectReference: {fileID: 21300000, guid: f7cb5b90aef825049a09d824417cfd00, type: 3}
     - target: {fileID: 5828310213312650283, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: m_RootOrder
       value: 0

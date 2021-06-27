@@ -47,6 +47,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1454809602056238081, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: pirateImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 880554325bdd7034aa48c8ee19896465, type: 3}
     - target: {fileID: 2576009101957964914, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: m_Controller
       value: 

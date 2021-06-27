@@ -2,24 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndGame : MonoBehaviour
+public class TransitionToLoseScene : MonoBehaviour
 {
     public GameObject CreditsMenu;
-    public GameObject WonGame;
     public GameObject LostGame;
 
-    ProgressBarHandler progressBarHandler = new ProgressBarHandler();
     // Start is called before the first frame update
     void Start()
     {
-        if(progressBarHandler.WonGameCheck == true){
-            WonGame.SetActive(true);
-            LostGame.SetActive(false);
-        } else {
-            WonGame.SetActive(false);
-            LostGame.SetActive(true);
-        }
-        
+        LostGame.SetActive(true);
+        CreditsMenu.SetActive(true);
     }
 
     // Update is called once per frame
@@ -31,5 +23,4 @@ public class EndGame : MonoBehaviour
     public void backButtonTapped(){
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
-    
 }

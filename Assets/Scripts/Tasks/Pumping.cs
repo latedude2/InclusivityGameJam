@@ -27,6 +27,9 @@ public class Pumping : PersistantTask
         waterLevel = Mathf.Clamp(waterLevel, 0, 1);
         waterShader._baseHeight = waterLevel;
         AnimatePump();
+        if(waterLevel == 1f){
+            UnityEngine.SceneManagement.SceneManager.LoadScene("LoseGame");
+        }
     }
 
     private void AnimatePump(){

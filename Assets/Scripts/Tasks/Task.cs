@@ -17,7 +17,7 @@ public class Task : MonoBehaviour
     void Start()
     {
         taskText = GameObject.Find("GameManager").GetComponent<MouseInput>().taskPopup.GetComponent<Text>();
-        taskBackground = GameObject.Find("RoomInfoBackground");
+        taskBackground = GameObject.Find("GameManager").GetComponent<MouseInput>().taskBackground;
     }
 
     // Update is called once per frame
@@ -60,6 +60,10 @@ public class Task : MonoBehaviour
 
     public void Select()
     {
+        if(taskBackground == null)
+        {
+            taskBackground = GameObject.Find("RoomInfoBackground");
+        }
         taskBackground.SetActive(true);
         taskText.gameObject.SetActive(true);
         taskText.text = "Work left: " + Math.Round(timeLeft, 1);
