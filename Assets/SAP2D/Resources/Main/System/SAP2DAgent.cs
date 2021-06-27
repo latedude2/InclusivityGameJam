@@ -202,7 +202,7 @@ namespace SAP2D {
                             }
 
                             //line movement to current tile
-                            transform.position = Vector2.MoveTowards(transform.position, currentTargetVector, Time.deltaTime * MovementSpeed);
+                            transform.position = Vector2.MoveTowards(transform.position, currentTargetVector, Time.deltaTime * MovementSpeed  * Cooking.HungerMultiplier());
 
                             if (Vector2.Distance(transform.position, currentTargetVector) < GetNextPointDistance)
                             { //if the object has approached a sufficient distance,
