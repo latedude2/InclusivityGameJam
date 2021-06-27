@@ -2899,6 +2899,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1488359350}
     m_Modifications:
+    - target: {fileID: 4633569617370496520, guid: 32838302bb943c64fb89e14d9ca20b75, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[12].m_Data
+      value: 
+      objectReference: {fileID: -4334832871868574370, guid: 2fd9c5f2f4ba0b2488080ba3c974d9d1, type: 3}
     - target: {fileID: 4633569617370496522, guid: 32838302bb943c64fb89e14d9ca20b75, type: 3}
       propertyPath: m_RootOrder
       value: 5
