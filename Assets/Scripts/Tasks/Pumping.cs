@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Pumping : PersistantTask
 {
     private Text taskText;
+    private GameObject taskBackground;
     public float waterLevel = 1f;
     public float basePumpingSpeed = 0.01f;
     public float baseFloodingSpeed = 0.002f;
@@ -16,6 +17,7 @@ public class Pumping : PersistantTask
     void Start()
     {
         taskText = GameObject.Find("GameManager").GetComponent<MouseInput>().taskPopup.GetComponent<Text>();
+        taskBackground = GameObject.Find("RoomInfoBackground");
     }
 
     void Update()
@@ -41,13 +43,14 @@ public class Pumping : PersistantTask
         float pumping = 0f;
         foreach(GameObject pirate in interactingPirates )
         {
-            pumping = basePumpingSpeed * pirate.GetComponent<Pirate>().WorkOnTask("Pumping");
+            pumping += basePumpingSpeed * pirate.GetComponent<Pirate>().WorkOnTask("Pumping");
         }   
         return pumping;
     }
     public void Select()
     {
         taskText.gameObject.SetActive(true);
+        taskBackground.SetActive(true);
         taskText.text = "Water in Ship: " + + Mathf.Round(waterLevel * 100000) + "/100000L\n" + 
         "Flooding in: " + Mathf.Round(GetFlooding() * 100000) + "L/Min" + "\n" + 
         "Pumping out: " + + Mathf.Round(GetPumping() * 100000) + "L/Min";

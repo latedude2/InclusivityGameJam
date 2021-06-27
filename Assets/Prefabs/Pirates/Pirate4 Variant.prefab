@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitName: Cook
+  traitName: Chef
   taskEffects:
   - taskName: Cooking
     modifier: 2
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitName: Eyesight
+  traitName: Missing eye
   taskEffects:
   - taskName: Steering
     modifier: 0
@@ -73,6 +73,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1454809602056238081, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: StatsDisplayBackground
+      value: 
+      objectReference: {fileID: 3221568418331270332}
     - target: {fileID: 2576009101957964914, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: m_Controller
       value: 

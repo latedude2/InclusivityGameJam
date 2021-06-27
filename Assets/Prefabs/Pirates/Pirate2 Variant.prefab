@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitName: FearOfHeights
+  traitName: Afraid of heights
   taskEffects:
   - taskName: Scouting
     modifier: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitName: BadCook
+  traitName: Bad cook
   taskEffects:
   - taskName: Cooking
     modifier: 0

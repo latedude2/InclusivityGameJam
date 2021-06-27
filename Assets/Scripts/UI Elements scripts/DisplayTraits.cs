@@ -6,58 +6,56 @@ using System.Linq;
 
 public class DisplayTraits : MonoBehaviour
 {
-
     public GameObject PirateTaskNames;
-    public GameObject PirateModefiers;
+    public GameObject PirateModifiers;
+    public GameObject StatsDisplayBackground;
     private List<Text> pirateTaskNames;
-    private List<Text> pirateModefiers;
-    public GameObject Pirate;
+    private List<Text> pirateModifiers;
+    private Image pirateImage;
     private List<Trait> traits;
-    private string[] taskNames = new string[3];
-    private float[] modifiers = new float[3];
+    private List<string> traitStrings = new List<string>();
+    private List<float> modifiers;
 
     // Start is called before the first frame update
     void Start() 
-    {   
-        traits = Pirate.GetComponents<Trait>().ToList();
+    {  
+        traits = GetComponents<Trait>().ToList();
         pirateTaskNames = PirateTaskNames.GetComponentsInChildren<Text>().ToList();
-        pirateModefiers = PirateModefiers.GetComponentsInChildren<Text>().ToList();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {   
-        getPirateTraits();
-        showPirateTaskNames();
-        showPirateModefiers();
-    }
-
-    void getPirateTraits(){
-        int index = 0;
+        pirateModifiers = PirateModifiers.GetComponentsInChildren<Text>().ToList();
+        //hideTraits();
         foreach(Trait trait in traits){
-            taskNames[index] = trait.taskEffects[0].taskName;
-            modifiers[index] = trait.taskEffects[0].modifier;
-            index ++;
+            traitStrings.Add(trait.traitName);
         }
     }
 
-    void showPirateTaskNames(){
+
+    public void showUIElements(){
+        StatsDisplayBackground.SetActive(true);
+    }
+
+    public void hideUIElements(){
+        StatsDisplayBackground.SetActive(false);
+    }
+
+    void showPirateTraits(){
         int index = 0;
         foreach (Text pirateTaskName in pirateTaskNames)
         {
-            pirateTaskName.text = taskNames[index];
-            index ++;
+            if(traitStrings.Count > index)
+                pirateTaskName.text = traitStrings[index];
+            else{
+                pirateTaskName.text = "";
+            }
+            index++;
         }
     }
 
-    void showPirateModefiers(){
-        int index = 0;
-        foreach (Text pirateModefier in pirateModefiers)
-        {
-            pirateModefier.text = string.Format("{0:N0}", modifiers[index]);
-            index ++;
-        }
+    public void updateTraits(){
+        showPirateTraits();
     }
-
     
+    void showImage(Image image){
+
+    }
+
 }
