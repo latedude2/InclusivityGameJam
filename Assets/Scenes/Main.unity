@@ -3864,6 +3864,10 @@ PrefabInstance:
       propertyPath: PirateTaskNames
       value: 
       objectReference: {fileID: 1722977560}
+    - target: {fileID: 7523152719577605614, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: StatsDisplayBackground
+      value: 
+      objectReference: {fileID: 1375900525}
     - target: {fileID: 8959663149547252132, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
       propertyPath: target
       value: 
