@@ -877,14 +877,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AssetsPPU: 100
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
-  m_UpscaleRT: 0
-  m_PixelSnapping: 0
-  m_CropFrameX: 0
-  m_CropFrameY: 0
-  m_StretchFill: 0
 --- !u!1 &612427613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2762876239133734323, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
@@ -2501,7 +2493,7 @@ PrefabInstance:
     - target: {fileID: 639703095829645309, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7d658fa6969a09c46940e2b571f943ad, type: 3}
+      objectReference: {fileID: 21300000, guid: a991225cb539c2f41902d2e16b5d288a, type: 3}
     - target: {fileID: 4523760322336785922, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
       propertyPath: m_Text
       value: 
