@@ -2186,6 +2186,14 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 324842256}
+    - target: {fileID: 5723413594768390622, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 21ca64d6bf8951c449e83e27edaccc94, type: 3}
+    - target: {fileID: 5875049677458078074, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 1a5701950b1d2f7449a1a66039dcbcaf, type: 2}
     - target: {fileID: 8230200967571596611, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
       propertyPath: target
       value: 
@@ -2251,6 +2259,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pirate3
       objectReference: {fileID: 0}
+    - target: {fileID: 5471819074162154550, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d658fa6969a09c46940e2b571f943ad, type: 3}
+    - target: {fileID: 6127770364794805394, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 5a8bf219b4bb8bf419bd82af4870089b, type: 2}
     - target: {fileID: 8553993822387142827, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
       propertyPath: target
       value: 
@@ -2316,6 +2332,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4687460311858033977, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81238109c215dc744b503232830a1c74, type: 3}
+    - target: {fileID: 6910998526905087389, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 4402c66cfb7acdc4b8b9975fa78fb951, type: 2}
     - target: {fileID: 8959663149547252132, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
       propertyPath: target
       value: 
