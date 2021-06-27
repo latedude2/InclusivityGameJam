@@ -16,7 +16,7 @@ MonoBehaviour:
   taskEffects:
   - taskName: Steering
     modifier: 0
-  - taskName: PoleDuty
+  - taskName: Scouting
     modifier: 0
 --- !u!114 &3172578261842060793
 MonoBehaviour:
@@ -32,7 +32,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   traitName: Handyman
   taskEffects:
-  - taskName: FixHoles
+  - taskName: FixHole
     modifier: 2
   - taskName: Pumping
     modifier: 2

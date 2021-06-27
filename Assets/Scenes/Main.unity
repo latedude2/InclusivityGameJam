@@ -1087,10 +1087,10 @@ RectTransform:
   m_Father: {fileID: 731844335}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -311.86, y: 196.44992}
-  m_SizeDelta: {x: 291.68, y: 151.1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 168, y: -99}
+  m_SizeDelta: {x: 291.68, y: 151.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468854245
 MonoBehaviour:
@@ -2588,6 +2588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProgressInfo
       objectReference: {fileID: 0}
+    - target: {fileID: 3023294475877267520, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3820914086700212601, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2611,11 +2615,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3023294475877267520, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
   m_PrefabInstance: {fileID: 479537983406848982}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &479537983406848984 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 479537982594707410, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
-  m_PrefabInstance: {fileID: 479537983406848982}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &479537983406848985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2628,51 +2627,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54fa21371ce8f44842ce906789d8bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &479537983406848986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479537983406848984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 479537983406848985}
-          m_TargetAssemblyTypeName: ShowElement, Assembly-CSharp
-          m_MethodName: ShowGameObject
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 479537983406848985}
-          m_TargetAssemblyTypeName: ShowElement, Assembly-CSharp
-          m_MethodName: HideGameObject
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &729741125768598805
 PrefabInstance:
   m_ObjectHideFlags: 0
