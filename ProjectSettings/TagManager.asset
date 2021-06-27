@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pirate
+  - Task
+  - Steering
+  - Scouting
+  - Pumping
+  - Navigation
   layers:
   - Default
   - TransparentFX
