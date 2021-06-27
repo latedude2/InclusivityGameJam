@@ -19,20 +19,20 @@ public class MouseInput : MonoBehaviour
     void Update()
     {
         HideTaskPopup();
-        RaycastHit2D hit;
+        RaycastHit2D[] hit;
         if (Input.GetMouseButtonDown(0))
         {       
             foreach(GameObject pirateGameObject in pirates)
             {
                 pirateGameObject.GetComponent<Pirate>().Select(false);
             }     
-            hit = Physics2D.Raycast(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,Camera.main.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0f);
-            if (hit) 
+            hit = Physics2D.RaycastAll(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,Camera.main.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0f);
+            if (hit.Length != 0) 
             {
-                if (hit.transform.gameObject.tag == "Pirate")
-                {
-                    hit.transform.gameObject.GetComponent<Pirate>().Select();
-                }
+                List<RaycastHit2D> hits = new List<RaycastHit2D>(hit);
+                List<RaycastHit2D> pirates = hits.FindAll(singleHit => singleHit.transform.gameObject.tag == "Pirate");
+                if(pirates.Count != 0)
+                    pirates[0].transform.gameObject.GetComponent<Pirate>().Select();
             }
         } 
         if(Input.GetMouseButtonDown(1))
@@ -45,38 +45,45 @@ public class MouseInput : MonoBehaviour
                 }
             }     
         }
-        hit = Physics2D.Raycast(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,Camera.main.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0f);
-        if (hit) 
+        hit = Physics2D.RaycastAll(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,Camera.main.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0f);
+        if (hit.Length != 0)  
         {
-            if (hit.transform.gameObject.tag == "Task")
+            List<RaycastHit2D> hits = new List<RaycastHit2D>(hit);
+            List<RaycastHit2D> tasks = hits.FindAll(singleHit => singleHit.transform.gameObject.tag == "Task");
+            List<RaycastHit2D> steering = hits.FindAll(singleHit => singleHit.transform.gameObject.tag == "Steering");
+            List<RaycastHit2D> scouting = hits.FindAll(singleHit => singleHit.transform.gameObject.tag == "Scouting");
+            List<RaycastHit2D> pumping = hits.FindAll(singleHit => singleHit.transform.gameObject.tag == "Pumping");
+            List<RaycastHit2D> navigation = hits.FindAll(singleHit => singleHit.transform.gameObject.tag == "Navigation");
+            List<RaycastHit2D> cooking = hits.FindAll(singleHit => singleHit.transform.gameObject.tag == "Cooking");
+            if(tasks.Count != 0)
             {
-                if(hit.transform.gameObject.GetComponent<Task>() != null)
-                    hit.transform.gameObject.GetComponent<Task>().Select();
+                if(tasks[0].transform.gameObject.GetComponent<Task>() != null)
+                    tasks[0].transform.gameObject.GetComponent<Task>().Select();
             }
-            if (hit.transform.gameObject.tag == "Steering")
+            if (steering.Count != 0)
             {
-                if(hit.transform.gameObject.GetComponent<Steering>() != null)
-                    hit.transform.gameObject.GetComponent<Steering>().Select();
+                if(steering[0].transform.gameObject.GetComponent<Steering>() != null)
+                    steering[0].transform.gameObject.GetComponent<Steering>().Select();
             }
-            if (hit.transform.gameObject.tag == "Scouting")
+            if (scouting.Count != 0)
             {
-                if(hit.transform.gameObject.GetComponent<Scouting>() != null)
-                    hit.transform.gameObject.GetComponent<Scouting>().Select();
+                if(scouting[0].transform.gameObject.GetComponent<Scouting>() != null)
+                    scouting[0].transform.gameObject.GetComponent<Scouting>().Select();
             }
-            if (hit.transform.gameObject.tag == "Pumping")
+            if (pumping.Count != 0)
             {
-                if(hit.transform.gameObject.GetComponent<Pumping>() != null)
-                    hit.transform.gameObject.GetComponent<Pumping>().Select();
+                if(pumping[0].transform.gameObject.GetComponent<Pumping>() != null)
+                    pumping[0].transform.gameObject.GetComponent<Pumping>().Select();
             }
-            if (hit.transform.gameObject.tag == "Navigation")
+            if (navigation.Count != 0)
             {
-                if(hit.transform.gameObject.GetComponent<Navigation>() != null)
-                    hit.transform.gameObject.GetComponent<Navigation>().Select();
+                if(navigation[0].transform.gameObject.GetComponent<Navigation>() != null)
+                    navigation[0].transform.gameObject.GetComponent<Navigation>().Select();
             }
-            if (hit.transform.gameObject.tag == "Cooking")
+            if (cooking.Count != 0)
             {
-                if(hit.transform.gameObject.GetComponent<Cooking>() != null)
-                    hit.transform.gameObject.GetComponent<Cooking>().Select();
+                if(cooking[0].transform.gameObject.GetComponent<Cooking>() != null)
+                    cooking[0].transform.gameObject.GetComponent<Cooking>().Select();
             }
         }  
     }
