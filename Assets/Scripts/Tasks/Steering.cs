@@ -15,6 +15,7 @@ public class Steering: PersistantTask
     }
 
     void EncounterObstacle(){
+        steeringQuality = 0f;
         scoutingBoost = scouting.GetScoutingBoost();
         //Pirate with best skill in range is chosen to steer
         foreach(GameObject pirate in interactingPirates )
@@ -29,6 +30,18 @@ public class Steering: PersistantTask
             Debug.Log("Spawning hole!");
             holeSpawner.Spawn();
         }
+    }
+
+    public float GetSteeringBoost(){
+        steeringQuality = 0f;
+        //Pirate with best skill in range is chosen to steer
+        foreach(GameObject pirate in interactingPirates )
+        {
+            if(steeringQuality < pirate.GetComponent<Pirate>().WorkOnTask("Steering")){
+                steeringQuality = pirate.GetComponent<Pirate>().WorkOnTask("Steering");
+            }
+        }   
+        return steeringQuality;
     }
 
 }

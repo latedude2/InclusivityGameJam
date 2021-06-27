@@ -46,7 +46,7 @@ public class DisplacementBehaviour : MonoBehaviour
         _mat.SetTexture("_MaskTex", _waterMaskTex);
         _mat.SetTexture("_DisplacementTex", _displacementTex);
         _mat.SetTexture("_WaterTex", _waterTex);
-        _mat.SetFloat("_BaseHeight", _baseHeight);
+        _mat.SetFloat("_BaseHeight", _baseHeight / 2);
         _mat.SetFloat("_Turbulence", _turbulence);
         _mat.SetFloat("_ScrollOffset", _scrollOffset);
         Graphics.Blit(_screenTex, null, _mat);
