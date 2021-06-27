@@ -271,10 +271,6 @@ MonoBehaviour:
     gridY: 12
   - isWalkable: 0
     walkableLock: 1
-    gridX: 3
-    gridY: 12
-  - isWalkable: 0
-    walkableLock: 1
     gridX: 2
     gridY: 12
   - isWalkable: 0
@@ -464,10 +460,6 @@ MonoBehaviour:
   - isWalkable: 0
     walkableLock: 1
     gridX: 4
-    gridY: 13
-  - isWalkable: 0
-    walkableLock: 1
-    gridX: 3
     gridY: 13
   - isWalkable: 0
     walkableLock: 1
