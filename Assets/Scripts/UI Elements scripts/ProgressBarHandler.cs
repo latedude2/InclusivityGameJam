@@ -9,7 +9,7 @@ public class ProgressBarHandler : MonoBehaviour
     public Slider slider;
     public Text progressInfo;
     private float progressValue = 0f;
-    public float defaultProgressSpeed = 0.005f;
+    public float defaultProgressSpeed = 0.001f;
     public Navigation navigation;
     public Steering steering;
     public Scouting scouting;

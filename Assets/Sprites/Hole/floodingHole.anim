@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pirate6_idle
+  m_Name: floodingHole
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 287abce54000cc14c8f8afcab96517a9, type: 3}
+      value: {fileID: 21300000, guid: 17539305792395d49acc9cb793553f4e, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: 8d90a7a9778e8e94ab0bb6d01867e328, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: fff6fb0081d94404e944319e912e0dac, type: 3}
-    - time: 0.33333334
-      value: {fileID: 21300000, guid: 287abce54000cc14c8f8afcab96517a9, type: 3}
+      value: {fileID: 21300000, guid: b9d870166542665418a16427b2778242, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: 561ea6d480f6815438ee4212f91052a0, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,15 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 287abce54000cc14c8f8afcab96517a9, type: 3}
-    - {fileID: 21300000, guid: fff6fb0081d94404e944319e912e0dac, type: 3}
-    - {fileID: 21300000, guid: 287abce54000cc14c8f8afcab96517a9, type: 3}
+    - {fileID: 21300000, guid: 17539305792395d49acc9cb793553f4e, type: 3}
+    - {fileID: 21300000, guid: 8d90a7a9778e8e94ab0bb6d01867e328, type: 3}
+    - {fileID: 21300000, guid: b9d870166542665418a16427b2778242, type: 3}
+    - {fileID: 21300000, guid: 561ea6d480f6815438ee4212f91052a0, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4166667
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
