@@ -36,12 +36,10 @@ public class DisplayTraits : MonoBehaviour
         foreach (Text pirateTaskName in pirateTaskNames)
         {
             pirateTaskName.enabled = true;
-            Debug.Log("Names Shown");
         }
         foreach (Text pirateModefier in pirateModefiers)
         {
             pirateModefier.enabled = true;
-            Debug.Log("Names Shown");
         }
         StatsDisplayBackground.SetActive(true);
         showPirateTaskNames();
@@ -52,12 +50,10 @@ public class DisplayTraits : MonoBehaviour
         foreach (Text pirateTaskName in pirateTaskNames)
         {
             pirateTaskName.enabled = false;
-            Debug.Log("Names Hidden");
         }
         foreach (Text pirateModefier in pirateModefiers)
         {
             pirateModefier.enabled = false;
-            Debug.Log("Modifiers Hidden");
         }
         StatsDisplayBackground.SetActive(false);
     }

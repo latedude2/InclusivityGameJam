@@ -1,36 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Pumping : PersistantTask
 {
+    private Text taskText;
     public float waterLevel = 1f;
     public float basePumpingSpeed = 0.01f;
     public float baseFloodingSpeed = 0.002f;
     public float holeFloodingSpeed = 0.002f;
     public DisplacementBehaviour waterShader;
     public Spawner spawner;
-    // Start is called before the first frame update
     void Start()
     {
-        
+        taskText = GameObject.Find("GameManager").GetComponent<MouseInput>().taskPopup.GetComponent<Text>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        foreach(GameObject pirate in interactingPirates )
-        {
-            waterLevel -= basePumpingSpeed * pirate.GetComponent<Pirate>().WorkOnTask("Pumping") * Time.deltaTime;
-        }   
+        waterLevel -= GetPumping() * Time.deltaTime;
+        waterLevel += GetFlooding() * Time.deltaTime;
+        waterLevel = Mathf.Clamp(waterLevel, 0, 1);
+        waterShader._baseHeight = waterLevel;
+    }
+
+    private float GetFlooding()
+    {
+        float flooding = baseFloodingSpeed;
         List<SpawnLocation> holes = spawner.spawnLocations.FindAll(location => location.used);
         //Flooding from holes
         foreach(SpawnLocation hole in holes){
-            waterLevel += holeFloodingSpeed * Time.deltaTime;
+            flooding += holeFloodingSpeed;
         }
-        //Base/default flooding
-        waterLevel += baseFloodingSpeed * Time.deltaTime;
-        waterLevel = Mathf.Clamp(waterLevel, 0, 1);
-        waterShader._baseHeight = waterLevel;
+        return flooding;
+    }
+
+    private float GetPumping(){
+        float pumping = 0f;
+        foreach(GameObject pirate in interactingPirates )
+        {
+            pumping += basePumpingSpeed * pirate.GetComponent<Pirate>().WorkOnTask("Pumping");
+        }   
+        return pumping;
+    }
+    public void Select()
+    {
+        taskText.gameObject.SetActive(true);
+        taskText.text = "Water in Ship: " + + Mathf.Round(waterLevel * 100000) + "/100000L\n" + 
+        "Flooding in: " + Mathf.Round(GetFlooding() * 100000) + "L/Min" + "\n" + 
+        "Pumping out: " + + Mathf.Round(GetPumping() * 100000) + "L/Min";
+        
     }
 }
