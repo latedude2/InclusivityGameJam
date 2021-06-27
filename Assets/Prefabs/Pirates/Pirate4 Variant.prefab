@@ -74,9 +74,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1454809602056238081, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: pirateImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 81238109c215dc744b503232830a1c74, type: 3}
+    - target: {fileID: 1454809602056238081, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: StatsDisplayBackground
       value: 
-      objectReference: {fileID: 3221568418331270332}
+      objectReference: {fileID: 0}
     - target: {fileID: 2576009101957964914, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: m_Controller
       value: 

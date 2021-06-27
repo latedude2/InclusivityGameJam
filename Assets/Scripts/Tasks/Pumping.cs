@@ -26,6 +26,29 @@ public class Pumping : PersistantTask
         waterLevel += GetFlooding() * Time.deltaTime;
         waterLevel = Mathf.Clamp(waterLevel, 0, 1);
         waterShader._baseHeight = waterLevel;
+        AnimatePump();
+        if(waterLevel == 1f){
+            UnityEngine.SceneManagement.SceneManager.LoadScene("LoseGame");
+        }
+    }
+
+    private void AnimatePump(){
+
+        GameObject animated = gameObject.transform.Find("Pump").gameObject;
+        GameObject nonAnimated = gameObject.transform.Find("pumpo").gameObject;
+        GameObject warning = gameObject.transform.Find("Warning").gameObject;
+
+        if(GetPumping() > 0f){
+            animated.SetActive(true);
+            nonAnimated.SetActive(false);
+            warning.SetActive(false);
+        }
+        else{
+            animated.SetActive(false);
+            nonAnimated.SetActive(true);
+            warning.SetActive(true);
+        }
+        
     }
 
     private float GetFlooding()

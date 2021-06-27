@@ -20,6 +20,12 @@ public class Cooking : PersistantTask
     void Update()
     {
         food += GetCooking() * Time.deltaTime;
+        ShowWarning();
+    }
+
+    private void ShowWarning(){
+        GameObject warning = gameObject.transform.Find("Warning").gameObject;
+        warning.SetActive(GetCooking() <= 0f);
     }
 
     private float GetCooking(){

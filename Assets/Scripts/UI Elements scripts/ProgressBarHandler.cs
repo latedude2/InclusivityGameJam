@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ProgressBarHandler : MonoBehaviour
 {
-    private bool wonGameCheck = false;
     public Slider slider;
     public Text progressInfo;
     private float progressValue = 0f;
@@ -26,8 +25,6 @@ public class ProgressBarHandler : MonoBehaviour
         }
     }
 
-    public bool WonGameCheck { get => wonGameCheck; set => wonGameCheck = value; }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -46,8 +43,7 @@ public class ProgressBarHandler : MonoBehaviour
 
     void checkForUpdate(float progress){
         if(progressValue >= 1f){
-            WonGameCheck = true;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("WinGame");
         }
         else {
             ProgressValue += progress * Time.deltaTime;

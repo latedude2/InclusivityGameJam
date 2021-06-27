@@ -44,12 +44,18 @@ namespace SAP2D {
         private Animator animator;
         SpriteRenderer spriteRenderer;
 
+        [SerializeField] private AudioClip[] footstepSounds;
+        [SerializeField] private AudioClip[] ladderstepSounds;
+
+        private AudioSource audioSource;
+
 
         private void Start()
         {
             pathfinder = SAP2DPathfinder.singleton;
             animator = GetComponentInChildren<Animator>();
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            audioSource = GetComponent<AudioSource>();
 
         }
 
@@ -64,6 +70,7 @@ namespace SAP2D {
                 {
                     isMoving = true;
                     transform.hasChanged = false;
+                    
                 }
                 else
                 {
@@ -118,7 +125,35 @@ namespace SAP2D {
 
             StartCoroutine(FindPath());
         }
+        private void PlayFootStepAudio()
+        {
+            if (audioSource != null && !audioSource.isPlaying)
+            {
+                int n = Random.Range(1, footstepSounds.Length);
+                audioSource.clip = footstepSounds[n];
+                audioSource.PlayOneShot(audioSource.clip);
 
+                footstepSounds[n] = footstepSounds[0];
+                footstepSounds[0] = audioSource.clip;
+            }
+            audioSource.pitch = 2;
+            
+        }
+        private void PlayLadderStepAudio()
+        {
+            if (audioSource != null && !audioSource.isPlaying)
+            {
+                int n = Random.Range(1, ladderstepSounds.Length);
+                audioSource.clip = ladderstepSounds[n];
+                audioSource.PlayOneShot(audioSource.clip);
+
+                ladderstepSounds[n] = ladderstepSounds[0];
+                ladderstepSounds[0] = audioSource.clip;
+            }
+            audioSource.pitch = 2;
+            audioSource.volume = 0.7F;
+
+        }
         private void Move()
         { //object movement
             if (Target != null)
@@ -142,18 +177,23 @@ namespace SAP2D {
                                 animator.SetBool("isWalking", true);
                                 animator.SetBool("isClimbing", false);
                                 spriteRenderer.flipX = false;
+                                PlayFootStepAudio();
+
                             }
                             else if (dir.x < -0.1)
                             {
                                 animator.SetBool("isWalking", true);
                                 animator.SetBool("isClimbing", false);
                                 spriteRenderer.flipX = true;
+                                PlayFootStepAudio();
+
                             }
                             else if (dir.y < -0.1 || dir.y > 0.1)
                             {
                                 animator.SetBool("isWalking", false);
                                 animator.SetBool("isClimbing", true);
                                 spriteRenderer.flipX = true;
+                                PlayLadderStepAudio();
                             }
                             else
                             {

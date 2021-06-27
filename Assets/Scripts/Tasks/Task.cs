@@ -17,12 +17,13 @@ public class Task : MonoBehaviour
     void Start()
     {
         taskText = GameObject.Find("GameManager").GetComponent<MouseInput>().taskPopup.GetComponent<Text>();
-        taskBackground = GameObject.Find("RoomInfoBackground");
+        taskBackground = GameObject.Find("GameManager").GetComponent<MouseInput>().taskBackground;
     }
 
     // Update is called once per frame
     void Update()
     {
+        ShowWarning();
         foreach(GameObject pirate in interactingPirates )
         {
             timeLeft -= pirate.GetComponent<Pirate>().WorkOnTask(taskName) * Time.deltaTime;
@@ -33,6 +34,12 @@ public class Task : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void ShowWarning(){
+        GameObject warning = gameObject.transform.Find("Warning").gameObject;
+        warning.SetActive(interactingPirates.Count == 0);
+    }
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Pirate")
@@ -53,6 +60,10 @@ public class Task : MonoBehaviour
 
     public void Select()
     {
+        if(taskBackground == null)
+        {
+            taskBackground = GameObject.Find("RoomInfoBackground");
+        }
         taskBackground.SetActive(true);
         taskText.gameObject.SetActive(true);
         taskText.text = "Work left: " + Math.Round(timeLeft, 1);
