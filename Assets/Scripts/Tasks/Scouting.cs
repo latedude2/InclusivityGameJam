@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class Scouting : PersistantTask
 {
     private Text taskText;
+    private GameObject taskBackground;
     void Start()
     {
         taskText = GameObject.Find("GameManager").GetComponent<MouseInput>().taskPopup.GetComponent<Text>();
+        taskBackground = GameObject.Find("RoomInfoBackground");
     }
 
     public float GetScoutingBoost(){
@@ -25,6 +27,7 @@ public class Scouting : PersistantTask
 
     public void Select()
     {
+        taskBackground.SetActive(true);
         taskText.gameObject.SetActive(true);
         taskText.text = "Scouting quality: " + Mathf.Round((GetScoutingBoost() - 1) * 100) + "%\n";
     }

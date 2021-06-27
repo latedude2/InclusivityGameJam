@@ -6,12 +6,14 @@ public class MouseInput : MonoBehaviour
 {
     public GameObject[] pirates;
     public GameObject taskPopup;
+    public GameObject taskBackground;
 
     // Start is called before the first frame update
     void Start()
     {
         pirates = GameObject.FindGameObjectsWithTag("Pirate");
         taskPopup = GameObject.Find("RoomInfo");
+        taskBackground = GameObject.Find("RoomInfoBackground");
     }
 
     void Update()
@@ -81,5 +83,6 @@ public class MouseInput : MonoBehaviour
 
     void HideTaskPopup(){
         taskPopup.SetActive(false);
+        taskBackground.SetActive(false);
     }
 }
