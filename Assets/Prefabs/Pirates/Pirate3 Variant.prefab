@@ -32,7 +32,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   traitName: MissingLeg
   taskEffects:
-  - taskName: PoleDuty
+  - taskName: Scouting
     modifier: 0.5
   - taskName: FixSails
     modifier: 0.5

@@ -1,5 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &952451087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510155835125338203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitName: MissingArm
+  taskEffects:
+  - taskName: Steering
+    modifier: 0.5
+  - taskName: FixHole
+    modifier: 0
+  - taskName: Pumping
+    modifier: 0.5
+  - taskName: FixSails
+    modifier: 0.5
 --- !u!114 &2494860584649703501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,9 +52,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   traitName: FearOfHeights
   taskEffects:
-  - taskName: PoleDuty
+  - taskName: Scouting
     modifier: 0
-  - taskName: FixingSails
+  - taskName: FixSails
     modifier: 0
 --- !u!114 &5189459706247109122
 MonoBehaviour:
@@ -50,28 +72,6 @@ MonoBehaviour:
   taskEffects:
   - taskName: Cooking
     modifier: 0
---- !u!114 &952451087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2510155835125338203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  traitName: MissingArm
-  taskEffects:
-  - taskName: Steering
-    modifier: 0.5
-  - taskName: FixHole
-    modifier: 0
-  - taskName: Pumping
-    modifier: 0.5
-  - taskName: FixSails
-    modifier: 0.5
 --- !u!1001 &8230200967380458760
 PrefabInstance:
   m_ObjectHideFlags: 0
