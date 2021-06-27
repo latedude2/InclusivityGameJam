@@ -1430,7 +1430,7 @@ MonoBehaviour:
     ShowGridParameters: 1
     ShowPathfindingSettings: 1
     ShowGridGraphSettigs: 0
-    ScaleLvl: 64
+    ScaleLvl: 1
   EditorSettings: {fileID: 11400000, guid: f54fe2e0866d59148bb49fcb7b6fd41b, type: 2}
   grids:
   - GridName: Default Grid 0
@@ -1478,26 +1478,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1588631438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 729741127404818254, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
-  m_PrefabInstance: {fileID: 729741125768598805}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1588631439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588631438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1645a35aca73256409c6457edb17f2ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PirateTaskNames: {fileID: 1722977560}
-  PirateModefiers: {fileID: 1786810965}
-  Pirate: {fileID: 1588631438}
 --- !u!1 &1722977560 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4523760322582675387, guid: ea54d87e8d39a6f448235a83ef44c052, type: 3}
@@ -1979,6 +1959,14 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 953918692}
+    - target: {fileID: 5688709687333778972, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: PirateModefiers
+      value: 
+      objectReference: {fileID: 1786810965}
+    - target: {fileID: 5688709687333778972, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
+      propertyPath: PirateTaskNames
+      value: 
+      objectReference: {fileID: 1722977560}
     - target: {fileID: 6540034740016020054, guid: fdd4e2c6384165144a42590915dd1d76, type: 3}
       propertyPath: target
       value: 
@@ -2924,6 +2912,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: 1a5701950b1d2f7449a1a66039dcbcaf, type: 2}
+    - target: {fileID: 7351855416435435785, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: PirateModefiers
+      value: 
+      objectReference: {fileID: 1786810965}
+    - target: {fileID: 7351855416435435785, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
+      propertyPath: PirateTaskNames
+      value: 
+      objectReference: {fileID: 1722977560}
     - target: {fileID: 8230200967571596611, guid: 401aec7483be9eb408b666ffaeb11bc9, type: 3}
       propertyPath: target
       value: 
@@ -2997,6 +2993,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: 5a8bf219b4bb8bf419bd82af4870089b, type: 2}
+    - target: {fileID: 7099187793959685345, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: PirateModefiers
+      value: 
+      objectReference: {fileID: 1786810965}
+    - target: {fileID: 7099187793959685345, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
+      propertyPath: PirateTaskNames
+      value: 
+      objectReference: {fileID: 1722977560}
     - target: {fileID: 8553993822387142827, guid: d41c32bcf8104b14ba8523fb0a191c11, type: 3}
       propertyPath: target
       value: 
@@ -3152,6 +3156,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: 4402c66cfb7acdc4b8b9975fa78fb951, type: 2}
+    - target: {fileID: 7523152719577605614, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: PirateModefiers
+      value: 
+      objectReference: {fileID: 1786810965}
+    - target: {fileID: 7523152719577605614, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
+      propertyPath: PirateTaskNames
+      value: 
+      objectReference: {fileID: 1722977560}
     - target: {fileID: 8959663149547252132, guid: a59e29bcc52056944915dd9c83af30a5, type: 3}
       propertyPath: target
       value: 

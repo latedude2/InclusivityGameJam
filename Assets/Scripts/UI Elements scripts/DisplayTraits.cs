@@ -6,8 +6,6 @@ using System.Linq;
 
 public class DisplayTraits : MonoBehaviour
 {
-
-    Pirate pirate = new Pirate();
     public GameObject PirateTaskNames;
     public GameObject PirateModefiers;
     private List<Text> pirateTaskNames;

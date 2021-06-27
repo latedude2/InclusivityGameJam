@@ -7,7 +7,7 @@ public class Pirate : MonoBehaviour
 {
     private bool isSelected = false;
 
-    private DisplayTraits displayTraits = new DisplayTraits();
+    private DisplayTraits displayTraits;
     [SerializeField] private Transform target;
     // Start is called before the first frame update
 
@@ -15,6 +15,7 @@ public class Pirate : MonoBehaviour
     void Start()
     {
         traits = GetComponents<Trait>().ToList();
+        displayTraits = GetComponent<DisplayTraits>();
     }
 
     // Update is called once per frame
