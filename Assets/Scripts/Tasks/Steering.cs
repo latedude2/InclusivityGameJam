@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Steering: PersistantTask
 {
     public Spawner holeSpawner;
     public Scouting scouting;
+    private Text taskText;
     public float steeringQuality = 0f;
     public float scoutingBoost = 1f;
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating(nameof(EncounterObstacle), 10.0f, 5f);
+        taskText = GameObject.Find("GameManager").GetComponent<MouseInput>().taskPopup.GetComponent<Text>();
     }
 
     void EncounterObstacle(){
@@ -42,6 +45,12 @@ public class Steering: PersistantTask
             }
         }   
         return steeringQuality;
+    }
+
+    public void Select()
+    {
+        taskText.gameObject.SetActive(true);
+        taskText.text = "Steering quality: " + Mathf.Round(GetSteeringBoost() * 100) + "%\n";
     }
 
 }

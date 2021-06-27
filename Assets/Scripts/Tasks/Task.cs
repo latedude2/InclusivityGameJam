@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Task : MonoBehaviour
 {
     public string taskName;
+    private Text taskText; 
     public List<GameObject> interactingPirates;
 
     public SpawnLocation spawnLocation;
@@ -12,7 +15,7 @@ public class Task : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        taskText = GameObject.Find("GameManager").GetComponent<MouseInput>().taskPopup.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -44,5 +47,11 @@ public class Task : MonoBehaviour
         {
             interactingPirates.Remove(col.gameObject);
         }
+    }
+
+    public void Select()
+    {
+        taskText.gameObject.SetActive(true);
+        taskText.text = "Work left: " + timeLeft;
     }
 }
