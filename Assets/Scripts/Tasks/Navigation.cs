@@ -14,6 +14,15 @@ public class Navigation : PersistantTask
         taskText = GameObject.Find("GameManager").GetComponent<MouseInput>().taskPopup.GetComponent<Text>();
         taskBackground = GameObject.Find("RoomInfoBackground");
     }
+
+    void Update(){
+        ShowWarning();
+    }
+
+    private void ShowWarning(){
+        GameObject warning = gameObject.transform.Find("Warning").gameObject;
+        warning.SetActive(GetNavigationBoost() <= 1f);
+    }
     public float GetNavigationBoost(){
         float navigationBoost = 1f;
         foreach(GameObject pirate in interactingPirates)

@@ -19,6 +19,15 @@ public class Steering: PersistantTask
         taskBackground = GameObject.Find("RoomInfoBackground");
     }
 
+    void Update()
+    {
+        ShowWarning();
+    }
+
+    private void ShowWarning(){
+        GameObject warning = gameObject.transform.Find("Warning").gameObject;
+        warning.SetActive(GetSteeringBoost() <= 0f);
+    }
     void EncounterObstacle(){
         steeringQuality = 0f;
         scoutingBoost = scouting.GetScoutingBoost();

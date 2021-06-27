@@ -23,6 +23,7 @@ public class Task : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ShowWarning();
         foreach(GameObject pirate in interactingPirates )
         {
             timeLeft -= pirate.GetComponent<Pirate>().WorkOnTask(taskName) * Time.deltaTime;
@@ -33,6 +34,12 @@ public class Task : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void ShowWarning(){
+        GameObject warning = gameObject.transform.Find("Warning").gameObject;
+        warning.SetActive(interactingPirates.Count == 0);
+    }
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Pirate")

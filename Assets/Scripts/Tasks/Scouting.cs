@@ -14,6 +14,15 @@ public class Scouting : PersistantTask
         taskBackground = GameObject.Find("RoomInfoBackground");
     }
 
+    void Update(){
+        ShowWarning();
+    }
+
+    private void ShowWarning(){
+        GameObject warning = gameObject.transform.Find("Warning").gameObject;
+        warning.SetActive(GetScoutingBoost() <= 1f);
+    }
+
     public float GetScoutingBoost(){
         float scoutingBoost = 1;
         foreach(GameObject pirate in interactingPirates)
