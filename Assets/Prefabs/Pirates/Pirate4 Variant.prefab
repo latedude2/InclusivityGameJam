@@ -73,6 +73,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1454809602056238081, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
+      propertyPath: StatsDisplayBackground
+      value: 
+      objectReference: {fileID: 3221568418331270332}
     - target: {fileID: 2576009101957964914, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
       propertyPath: m_Controller
       value: 
