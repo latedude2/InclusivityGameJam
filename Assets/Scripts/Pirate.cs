@@ -21,13 +21,14 @@ public class Pirate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //displayTraits.hideUIElements();
         if(isSelected){
             GetComponentInChildren<SpriteRenderer>().color = Color.yellow;
-            displayTraits.showTraits();
+            displayTraits.updateTraits();
+            //displayTraits.showUIElements();
         }
         else {
             GetComponentInChildren<SpriteRenderer>().color = Color.white;
-            displayTraits.hideTraits();
         }
     }
 

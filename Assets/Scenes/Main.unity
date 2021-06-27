@@ -3025,6 +3025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1488359350}
     m_Modifications:
+    - target: {fileID: 891008288014351031, guid: 0e508e35bd08d4a4fa85d5bd4e1b4051, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3984819030192609505, guid: 0e508e35bd08d4a4fa85d5bd4e1b4051, type: 3}
       propertyPath: m_Name
       value: Ship Background
