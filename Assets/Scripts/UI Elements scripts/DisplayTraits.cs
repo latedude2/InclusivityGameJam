@@ -8,6 +8,7 @@ public class DisplayTraits : MonoBehaviour
 {
     public GameObject PirateTaskNames;
     public GameObject PirateModefiers;
+    public GameObject StatsDisplayBackground;
     private List<Text> pirateTaskNames;
     private List<Text> pirateModefiers;
     private Image pirateImage;
@@ -22,27 +23,27 @@ public class DisplayTraits : MonoBehaviour
         traits = Pirate.GetComponents<Trait>().ToList();
         pirateTaskNames = PirateTaskNames.GetComponentsInChildren<Text>().ToList();
         pirateModefiers = PirateModefiers.GetComponentsInChildren<Text>().ToList();
-
         hideTraits();
-
     }
 
     // Update is called once per frame
     void Update()
     {   
-
+        getPirateTraits();
     }
 
     public void showTraits(){
         foreach (Text pirateTaskName in pirateTaskNames)
         {
             pirateTaskName.enabled = true;
+            Debug.Log("Names Shown");
         }
         foreach (Text pirateModefier in pirateModefiers)
         {
             pirateModefier.enabled = true;
+            Debug.Log("Names Shown");
         }
-        getPirateTraits();
+        StatsDisplayBackground.SetActive(true);
         showPirateTaskNames();
         showPirateModefiers();
     }
@@ -51,11 +52,14 @@ public class DisplayTraits : MonoBehaviour
         foreach (Text pirateTaskName in pirateTaskNames)
         {
             pirateTaskName.enabled = false;
+            Debug.Log("Names Hidden");
         }
         foreach (Text pirateModefier in pirateModefiers)
         {
             pirateModefier.enabled = false;
+            Debug.Log("Modifiers Hidden");
         }
+        StatsDisplayBackground.SetActive(false);
     }
 
     void getPirateTraits(){
