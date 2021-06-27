@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +8,7 @@ public class Task : MonoBehaviour
 {
     public string taskName;
     private Text taskText; 
+    private GameObject taskBackground;
     public List<GameObject> interactingPirates;
 
     public SpawnLocation spawnLocation;
@@ -16,6 +17,7 @@ public class Task : MonoBehaviour
     void Start()
     {
         taskText = GameObject.Find("GameManager").GetComponent<MouseInput>().taskPopup.GetComponent<Text>();
+        taskBackground = GameObject.Find("RoomInfoBackground");
     }
 
     // Update is called once per frame
@@ -51,7 +53,8 @@ public class Task : MonoBehaviour
 
     public void Select()
     {
+        taskBackground.SetActive(true);
         taskText.gameObject.SetActive(true);
-        taskText.text = "Work left: " + timeLeft;
+        taskText.text = "Work left: " + Math.Round(timeLeft, 1);
     }
 }
