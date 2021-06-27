@@ -48,8 +48,8 @@ namespace SAP2D {
         private void Start()
         {
             pathfinder = SAP2DPathfinder.singleton;
-            animator = GetComponent<Animator>();
-            spriteRenderer = GetComponent<SpriteRenderer>();
+            animator = GetComponentInChildren<Animator>();
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         }
 
