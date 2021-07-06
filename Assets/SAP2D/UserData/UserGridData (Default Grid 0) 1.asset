@@ -43,14 +43,6 @@ MonoBehaviour:
     gridY: 7
   - isWalkable: 0
     walkableLock: 1
-    gridX: 14
-    gridY: 7
-  - isWalkable: 0
-    walkableLock: 1
-    gridX: 13
-    gridY: 7
-  - isWalkable: 0
-    walkableLock: 1
     gridX: 12
     gridY: 7
   - isWalkable: 0
