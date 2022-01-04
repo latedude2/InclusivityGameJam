@@ -5,17 +5,22 @@ using UnityEngine;
 [System.Serializable]
 public class TaskEffect
 {
-    [SerializeField] public string taskName;
-    [SerializeField] public float modifier;
+    public string taskName;
+    public float modifier;
 }
+[System.Serializable]
+public class TraitData
+{
+    public string traitName;
+    public TaskEffect[] taskEffects;
+}
+
 [System.Serializable]
 public class Trait : MonoBehaviour
 {
-    [SerializeField] public string traitName;
-    [SerializeField] public TaskEffect[] taskEffects;
-
+    public TraitData traitData;
     public float GetEffectOnTask(string taskName){
-        foreach(TaskEffect taskEffect in taskEffects){
+        foreach(TaskEffect taskEffect in traitData.taskEffects){
             if(taskEffect.taskName == taskName)
             {
                 return taskEffect.modifier;

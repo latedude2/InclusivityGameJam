@@ -49,7 +49,7 @@ public class DisplayTraits : MonoBehaviour
 
         //hideTraits();
         foreach(Trait trait in traits){
-            traitStrings.Add(trait.traitName);
+            traitStrings.Add(trait.traitData.traitName);
         }
     }
 

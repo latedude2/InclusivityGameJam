@@ -464,6 +464,7 @@ GameObject:
   - component: {fileID: 1877648762}
   - component: {fileID: 1877648761}
   - component: {fileID: 1877648763}
+  - component: {fileID: 1877648764}
   m_Layer: 0
   m_Name: TraitCreator
   m_TagString: Untagged
@@ -483,7 +484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7f25f99073f6146a8139a009095c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traits: []
 --- !u!4 &1877648762
 Transform:
   m_ObjectHideFlags: 0
@@ -510,7 +510,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitName: Bad cook
-  taskEffects:
-  - taskName: Cooking
-    modifier: 0
+  traitData:
+    traitName: Educated
+    taskEffects:
+    - taskName: Navigation
+      modifier: 2
+--- !u!114 &1877648764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877648760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitData:
+    traitName: 
+    taskEffects: []
