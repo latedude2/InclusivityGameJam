@@ -19,6 +19,27 @@ public class DisplayTraits : MonoBehaviour
     private List<string> traitStrings = new List<string>();
     private List<float> modifiers;
     
+    void Start() {
+        StatsDisplayBackground = GameObject.Find("StatsDisplayBackground");
+        pirateImageToShow = GameObject.Find("pirateImage");   
+        getUI();
+        
+    }
+
+    void getUI()
+    {
+        PirateTraitNames = GameObject.Find("PirateTraitNames");
+        PirateModifiers = GameObject.Find("PirateModifiers");
+        traits = GetComponents<Trait>().ToList();
+        pirateTraitNames = PirateTraitNames.GetComponentsInChildren<Text>().ToList();
+        pirateModifiers = PirateModifiers.GetComponentsInChildren<Text>().ToList();
+
+        //hideTraits();
+        foreach(Trait trait in traits){
+            traitStrings.Add(trait.traitData.traitName);
+        }
+    }
+
     void OnEnable()
     {
     //Tell our 'OnLevelFinishedLoading' function to start listening for a scene change as soon as this script is enabled.
@@ -37,20 +58,12 @@ public class DisplayTraits : MonoBehaviour
         {
             return;
         }
-        PirateTraitNames = GameObject.Find("PirateTraitNames");
-        PirateModifiers = GameObject.Find("PirateModifiers");
+        
         StatsDisplayBackground = GameObject.Find("StatsDisplayBackground");
         pirateImageToShow = GameObject.Find("pirateImage");
         GetComponent<SAP2DAgent>().enabled = true;
-        
-        traits = GetComponents<Trait>().ToList();
-        pirateTraitNames = PirateTraitNames.GetComponentsInChildren<Text>().ToList();
-        pirateModifiers = PirateModifiers.GetComponentsInChildren<Text>().ToList();
 
-        //hideTraits();
-        foreach(Trait trait in traits){
-            traitStrings.Add(trait.traitData.traitName);
-        }
+        getUI();
     }
 
     void showPirateTraits(){

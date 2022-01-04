@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using Newtonsoft.Json;
+using UnityEngine.SceneManagement;
 
 
 public class GeneratePirates : MonoBehaviour
 {
-    List<int> availablePirateNumbers = new List<int>();
+    List<int> availablePirateNumbers;
     public int traitCount = 3;
     public int pirateNumber = 4;
     private int maxPirateCount = 6;
@@ -19,6 +20,12 @@ public class GeneratePirates : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
         ReadTraits();
+        Generate();
+    }
+
+    void Generate()
+    {
+        availablePirateNumbers = new List<int>();
         for(int i = 1; i <= maxPirateCount; i++)
         {
             availablePirateNumbers.Add(i);
@@ -26,7 +33,9 @@ public class GeneratePirates : MonoBehaviour
 
         for(int i = 0; i < pirateNumber; i++)
         {
-            pirates.Add(CreatePirate());
+            GameObject pirate = CreatePirate();
+            pirates.Add(pirate);
+            pirate.transform.position = new Vector3(4f + i * 0.9f, -2f, 0f);
         }
     }
 
@@ -65,4 +74,31 @@ public class GeneratePirates : MonoBehaviour
         return pirate;
     }
 
+    public void RegeneratePirates()
+    {
+        foreach(GameObject pirate in pirates)
+        {
+            Destroy(pirate);
+        }
+        pirates = new List<GameObject>();
+        
+        Generate();
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnMainMenuLevelLoad;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnMainMenuLevelLoad;
+    }
+    void OnMainMenuLevelLoad(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.name == "MainMenu")
+        {
+            Destroy(gameObject);
+        }  
+    }
 }
