@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using Newtonsoft.Json;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
 
 public class GeneratePirates : MonoBehaviour
@@ -19,8 +20,7 @@ public class GeneratePirates : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        ReadTraits();
-        Generate();
+        StartCoroutine(nameof(ReadTraits));
     }
 
     void Generate()
@@ -59,10 +59,26 @@ public class GeneratePirates : MonoBehaviour
         return pirate;
     }
 
-    void ReadTraits()
+    IEnumerator ReadTraits()
     {
-        possibleTraits = JsonConvert.DeserializeObject<List<TraitData>>(File.ReadAllText(Application.streamingAssetsPath + "/Traits.json"));
+        #if UNITY_EDITOR
+            possibleTraits = JsonConvert.DeserializeObject<List<TraitData>>(File.ReadAllText(System.IO.Path.Combine(Application.streamingAssetsPath,"Traits.json")));
+            yield return null;
+        #elif UNITY_WEBGL
+            string path = "StreamingAssets/Traits.json";
+            UnityWebRequest uwr = UnityWebRequest.Get(path);
+            yield return uwr.SendWebRequest();
+            possibleTraits = JsonConvert.DeserializeObject<List<TraitData>>(uwr.downloadHandler.text);
+            Debug.Log(uwr.downloadHandler.text);
+        #else
+            possibleTraits = JsonConvert.DeserializeObject<List<TraitData>>(File.ReadAllText(System.IO.Path.Combine(Application.streamingAssetsPath,"Traits.json")));
+            yield return null;
+        #endif
+
+        Generate();
     }
+
+
 
     GameObject AddTrait(GameObject pirate, List<TraitData> availableTraits)
     {
@@ -81,7 +97,7 @@ public class GeneratePirates : MonoBehaviour
             Destroy(pirate);
         }
         pirates = new List<GameObject>();
-        
+
         Generate();
     }
 
