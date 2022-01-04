@@ -293,9 +293,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This scene is used to create traits. Add traits to the TraitCreator script
-    in the TraitCreator gameObject and play  this scene. The traits will then be
-    saved to a file from which they are read during playtime
+  m_Text: This scene is used to create traits. Add traits to the TraitCreator gameObject
+    and play this scene. The traits will then be saved to a file from which they
+    are read during playtime
 --- !u!222 &873821920
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -528,5 +528,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   traitData:
-    traitName: 
-    taskEffects: []
+    traitName: Missing leg
+    taskEffects:
+    - taskName: Scouting
+      modifier: 0.9
+    - taskName: FixSails
+      modifier: 0.9

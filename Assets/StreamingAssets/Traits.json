@@ -1,0 +1,24 @@
+[
+  {
+    "traitName": "Educated",
+    "taskEffects": [
+      {
+        "taskName": "Navigation",
+        "modifier": 2.0
+      }
+    ]
+  },
+  {
+    "traitName": "Missing leg",
+    "taskEffects": [
+      {
+        "taskName": "Scouting",
+        "modifier": 0.9
+      },
+      {
+        "taskName": "FixSails",
+        "modifier": 0.9
+      }
+    ]
+  }
+]

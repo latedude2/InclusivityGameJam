@@ -5,6 +5,7 @@ using UnityEngine;
 public class GeneratePirates : MonoBehaviour
 {
     List<int> availablePirateNumbers = new List<int>();
+    List<Trait> availableTraits = new List<Trait>();
     List<GameObject> pirates  = new List<GameObject>();
     [SerializeField] GameObject PiratePrefab;
     // Start is called before the first frame update
@@ -30,7 +31,17 @@ public class GeneratePirates : MonoBehaviour
         string pirateAnimatorName = "Pirate" + pirateNumber;
         RuntimeAnimatorController pirateAnimator = Resources.Load<RuntimeAnimatorController>("Sprites/AnimationControllers/" + pirateAnimatorName);
 
+        pirate = AddTrait(pirate);
+
         pirate.GetComponentInChildren<Animator>().runtimeAnimatorController = pirateAnimator;
         return pirate;
     }
+
+
+    GameObject AddTrait(GameObject pirate)
+    {
+
+        return pirate;
+    }
+
 }
