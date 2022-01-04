@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using SAP2D;
 
 public class DisplayTraits : MonoBehaviour
 {
@@ -40,6 +41,7 @@ public class DisplayTraits : MonoBehaviour
         PirateModifiers = GameObject.Find("PirateModifiers");
         StatsDisplayBackground = GameObject.Find("StatsDisplayBackground");
         pirateImageToShow = GameObject.Find("pirateImage");
+        GetComponent<SAP2DAgent>().enabled = true;
         
         traits = GetComponents<Trait>().ToList();
         pirateTraitNames = PirateTraitNames.GetComponentsInChildren<Text>().ToList();

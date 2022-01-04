@@ -72,9 +72,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1645a35aca73256409c6457edb17f2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PirateTaskNames: {fileID: 0}
+  PirateTraitNames: {fileID: 0}
   PirateModifiers: {fileID: 0}
   StatsDisplayBackground: {fileID: 0}
+  Pirate: {fileID: 0}
+  pirateImageToShow: {fileID: 0}
+  pirateImage: {fileID: 0}
 --- !u!1 &7565459656855289910
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +259,10 @@ PrefabInstance:
     - target: {fileID: 299107267298450035, guid: 013079affae5ba24bad744f569696fab, type: 3}
       propertyPath: Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 299107267298450035, guid: 013079affae5ba24bad744f569696fab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 21219210, guid: 013079affae5ba24bad744f569696fab, type: 3}

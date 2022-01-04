@@ -5,14 +5,14 @@ using UnityEngine;
 [System.Serializable]
 public class TaskEffect
 {
-    public string taskName;
-    public float modifier;
+    [SerializeField] public string taskName;
+    [SerializeField] public float modifier;
 }
-
+[System.Serializable]
 public class Trait : MonoBehaviour
 {
-    public string traitName;
-    public TaskEffect[] taskEffects;
+    [SerializeField] public string traitName;
+    [SerializeField] public TaskEffect[] taskEffects;
 
     public float GetEffectOnTask(string taskName){
         foreach(TaskEffect taskEffect in taskEffects){

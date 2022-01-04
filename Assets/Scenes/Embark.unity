@@ -590,6 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44185fe38d5ee1f4f8f72c7986d60424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PiratePrefab: {fileID: 5828310213312957779, guid: 602fb57b586dccb46b00c1e22af05b95, type: 3}
 --- !u!1 &1117124459
 GameObject:
   m_ObjectHideFlags: 0
