@@ -28,4 +28,8 @@ public class MainMenuHandler : MonoBehaviour
         MainMenu.SetActive(true);
         CreditsMenu.SetActive(false);
     }
+
+    public void openScene(string scene){
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
+    }
 }

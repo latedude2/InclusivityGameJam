@@ -11,6 +11,8 @@ TagManager:
   - Pumping
   - Navigation
   - Cooking
+  - Miner
+  - Zombie
   layers:
   - Default
   - TransparentFX
@@ -65,4 +67,7 @@ TagManager:
     locked: 0
   - name: Hammer
     uniqueID: 389532129
+    locked: 0
+  - name: UI
+    uniqueID: 3588800531
     locked: 0
