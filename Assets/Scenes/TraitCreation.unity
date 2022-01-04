@@ -465,6 +465,13 @@ GameObject:
   - component: {fileID: 1877648761}
   - component: {fileID: 1877648763}
   - component: {fileID: 1877648764}
+  - component: {fileID: 1877648771}
+  - component: {fileID: 1877648770}
+  - component: {fileID: 1877648769}
+  - component: {fileID: 1877648768}
+  - component: {fileID: 1877648767}
+  - component: {fileID: 1877648766}
+  - component: {fileID: 1877648765}
   m_Layer: 0
   m_Name: TraitCreator
   m_TagString: Untagged
@@ -534,3 +541,140 @@ MonoBehaviour:
       modifier: 0.9
     - taskName: FixSails
       modifier: 0.9
+--- !u!114 &1877648765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877648760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitData:
+    traitName: Missing arm
+    taskEffects:
+    - taskName: Steering
+      modifier: 0.5
+    - taskName: FixHole
+      modifier: 0
+--- !u!114 &1877648766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877648760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitData:
+    traitName: Handyman
+    taskEffects:
+    - taskName: FixHole
+      modifier: 2
+    - taskName: Pumping
+      modifier: 2
+--- !u!114 &1877648767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877648760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitData:
+    traitName: Missing eye
+    taskEffects:
+    - taskName: Steering
+      modifier: 0
+    - taskName: Scouting
+      modifier: 0
+--- !u!114 &1877648768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877648760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitData:
+    traitName: Lazy
+    taskEffects:
+    - taskName: Cooking
+      modifier: 0.8
+    - taskName: Steering
+      modifier: 0.8
+    - taskName: Scouting
+      modifier: 0.8
+    - taskName: FixHole
+      modifier: 0.8
+    - taskName: FixSails
+      modifier: 0.8
+    - taskName: Navigation
+      modifier: 0.8
+--- !u!114 &1877648769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877648760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitData:
+    traitName: Eagle eye
+    taskEffects:
+    - taskName: Steering
+      modifier: 1.5
+    - taskName: Scouting
+      modifier: 1.2
+--- !u!114 &1877648770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877648760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitData:
+    traitName: Tailor
+    taskEffects:
+    - taskName: FixSails
+      modifier: 2
+--- !u!114 &1877648771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877648760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507d617248e238c4ba0c1c372f29d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitData:
+    traitName: Chef
+    taskEffects:
+    - taskName: Cooking
+      modifier: 2

@@ -20,5 +20,104 @@
         "modifier": 0.9
       }
     ]
+  },
+  {
+    "traitName": "Chef",
+    "taskEffects": [
+      {
+        "taskName": "Cooking",
+        "modifier": 2.0
+      }
+    ]
+  },
+  {
+    "traitName": "Tailor",
+    "taskEffects": [
+      {
+        "taskName": "FixSails",
+        "modifier": 2.0
+      }
+    ]
+  },
+  {
+    "traitName": "Eagle eye",
+    "taskEffects": [
+      {
+        "taskName": "Steering",
+        "modifier": 1.5
+      },
+      {
+        "taskName": "Scouting",
+        "modifier": 1.2
+      }
+    ]
+  },
+  {
+    "traitName": "Lazy",
+    "taskEffects": [
+      {
+        "taskName": "Cooking",
+        "modifier": 0.8
+      },
+      {
+        "taskName": "Steering",
+        "modifier": 0.8
+      },
+      {
+        "taskName": "Scouting",
+        "modifier": 0.8
+      },
+      {
+        "taskName": "FixHole",
+        "modifier": 0.8
+      },
+      {
+        "taskName": "FixSails",
+        "modifier": 0.8
+      },
+      {
+        "taskName": "Navigation",
+        "modifier": 0.8
+      }
+    ]
+  },
+  {
+    "traitName": "Missing eye",
+    "taskEffects": [
+      {
+        "taskName": "Steering",
+        "modifier": 0.0
+      },
+      {
+        "taskName": "Scouting",
+        "modifier": 0.0
+      }
+    ]
+  },
+  {
+    "traitName": "Handyman",
+    "taskEffects": [
+      {
+        "taskName": "FixHole",
+        "modifier": 2.0
+      },
+      {
+        "taskName": "Pumping",
+        "modifier": 2.0
+      }
+    ]
+  },
+  {
+    "traitName": "Missing arm",
+    "taskEffects": [
+      {
+        "taskName": "Steering",
+        "modifier": 0.5
+      },
+      {
+        "taskName": "FixHole",
+        "modifier": 0.0
+      }
+    ]
   }
 ]
